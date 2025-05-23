@@ -154,7 +154,7 @@
 /datum/discipline_power/melpominee/sirens_beckoning/activate()
 	. = ..()
 	for(var/mob/living/carbon/human/listener in oviewers(7, owner))
-		listener.Stun(2 SECONDS)
+		listener.Knockdown(1 SECONDS)
 
 		listener.remove_overlay(MUTATIONS_LAYER)
 		var/mutable_appearance/song_overlay = mutable_appearance('code/modules/wod13/icons.dmi', "song", -MUTATIONS_LAYER)
@@ -184,7 +184,7 @@
 /datum/discipline_power/melpominee/shattering_crescendo/activate()
 	. = ..()
 	for(var/mob/living/carbon/human/listener in oviewers(7, owner))
-		listener.Stun(0.5 SECONDS)
+		listener.Knockdown(1 SECONDS)
 		listener.apply_damage(20, BRUTE, BODY_ZONE_HEAD)
 		listener.apply_damage(15, CLONE)
 

@@ -229,7 +229,6 @@
 		owner.emote("me",1,"riffs brutally.",TRUE)
 		last_shit = world.time
 		for(var/mob/living/carbon/human/H in oviewers(7, owner))
-			H.Stun(30)
 			H.do_jitter_animation(30)
 
 /datum/action/item_action/toggle_gunlight
