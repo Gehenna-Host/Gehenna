@@ -167,6 +167,7 @@
 	range = 7
 
 	duration_length = 3 SECONDS
+	cooldown_length = 5 SECONDS
 
 /datum/discipline_power/daimonion/fear_of_the_void_below/pre_activation_checks(mob/living/target)
 	if(SSroll.storyteller_roll(owner.get_total_social(), target.get_total_mentality(), mobs_to_show_output = owner) == !ROLL_SUCCESS)
@@ -193,12 +194,14 @@
 
 	level = 3
 	check_flags = DISC_CHECK_CONSCIOUS | DISC_CHECK_CAPABLE | DISC_CHECK_IMMOBILE
-	target_type = TARGET_LIVING
+	target_type = TARGET_TURF | TARGET_MOB | TARGET_OBJ
 	range = 7
 
 	aggravating = TRUE
 	hostile = TRUE
 	violates_masquerade = TRUE
+
+	cooldown_length = 5 SECONDS
 
 /datum/discipline_power/daimonion/conflagration/activate(mob/living/target)
 	. = ..()
@@ -213,30 +216,6 @@
 	for(var/obj/item/melee/vampirearms/knife/gangrel/claws in owner)
 		qdel(claws)
 
-/datum/discipline_power/daimonion/conflagration/post_gain()
-	. = ..()
-	var/obj/effect/proc_holder/spell/aimed/fireball/baali/balefire = new(owner)
-	owner.mind.AddSpell(balefire)
-
-/obj/effect/proc_holder/spell/aimed/fireball/baali
-	name = "Infernal Fireball"
-	desc = "This spell fires an explosive fireball at a target."
-	school = "evocation"
-	charge_max = 60
-	clothes_req = FALSE
-	invocation = "FR BRTH"
-	invocation_type = INVOCATION_WHISPER
-	range = 20
-	cooldown_min = 20 //10 deciseconds reduction per rank
-	projectile_type = /obj/projectile/magic/aoe/fireball/baali
-	base_icon_state = "infernaball"
-	action_icon_state = "infernaball0"
-	action_background_icon_state = "default"
-	sound = 'sound/magic/fireball.ogg'
-	active_msg = "You prepare to cast your fireball spell!"
-	deactive_msg = "You extinguish your fireball... for now."
-	active = FALSE
-
 //PSYCHOMACHIA
 /datum/discipline_power/daimonion/psychomachia
 	name = "Psychomachia"
@@ -248,6 +227,8 @@
 	range = 7
 
 	violates_masquerade = FALSE
+
+	cooldown_length = 5 SECONDS
 
 /datum/discipline_power/daimonion/psychomachia/activate(mob/living/target)
 	. = ..()
@@ -269,6 +250,8 @@
 	target_type = TARGET_LIVING
 	range = 7
 	violates_masquerade = TRUE
+
+	cooldown_length = 5 SECONDS
 
 	var/initialized_curses = FALSE //can't do this in new since it wouldn't have assigned owner yet. this will do.
 	var/list/curse_names = list()
