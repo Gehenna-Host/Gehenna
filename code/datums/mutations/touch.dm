@@ -44,6 +44,7 @@
 	else if(isliving(target))
 		var/mob/living/L = target
 		L.electrocute_act(15, user, 1, SHOCK_NOSTUN)
+		L.apply_damage(20, BURN)
 		L.visible_message("<span class='danger'>[user] electrocutes [target]!</span>","<span class='userdanger'>[user] electrocutes you!</span>")
 		return ..()
 	else

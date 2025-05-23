@@ -745,7 +745,7 @@
 	stamina = 20
 	hitsound = 'sound/effects/splat.ogg'
 	var/chain
-	var/knockdown_time = (0.5 SECONDS)
+	var/knockdown_time = (0.3 SECONDS)
 
 /obj/projectile/flesh_shintai/fire(setAngle)
 	if(firer)
@@ -1577,7 +1577,7 @@
 	stamina = 20
 	hitsound = 'code/modules/wod13/sounds/lightning.ogg'
 	var/chain
-	var/knockdown_time = (0.1 SECONDS)
+	var/knockdown_time = (0.3 SECONDS)
 
 /obj/projectile/storm_shintai/fire(setAngle)
 	if(firer)
@@ -1598,8 +1598,9 @@
 		playsound(get_turf(target), 'code/modules/wod13/sounds/lightning.ogg', 100, FALSE)
 		if (isliving(target))
 			var/mob/living/L = target
-			L.Stun(0.5 SECONDS)
-			L.electrocute_act(50, src, siemens_coeff = 1, flags = NONE)
+			L.Stun(0.3 SECONDS)
+			L.electrocute_act(15, src, siemens_coeff = 1, flags = NONE)
+			L.apply_damage(20, BURN)
 			return
 
 /obj/projectile/storm_shintai/Destroy()
