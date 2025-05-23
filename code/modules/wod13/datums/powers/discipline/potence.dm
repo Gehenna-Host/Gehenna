@@ -17,6 +17,12 @@
 	owner.dna.species.punchdamagehigh += (1 * level)
 	owner.dna.species.meleemod += (0.1 * level)
 
+/obj/item/organ/cyberimp/arm/potence
+	name = "potence hand"
+	desc = "The hand of a potence user."
+	icon_state = "lasombra"
+	contents = newlist(/obj/item/melee/vampirearms/knife/potence)
+
 //POTENCE 1
 /datum/discipline_power/potence/one
 	name = "Potence 1"
@@ -101,6 +107,8 @@
 	qdel(tackler)
 	REMOVE_TRAIT(owner, TRAIT_NONMASQUERADE, TRAUMA_TRAIT)
 
+/obj/item/organ/cyberimp/arm/potence
+
 //POTENCE 3
 /datum/discipline_power/potence/three
 	name = "Potence 3"
@@ -144,6 +152,11 @@
 	qdel(tackler)
 	REMOVE_TRAIT(owner, TRAIT_NONMASQUERADE, TRAUMA_TRAIT)
 	REMOVE_TRAIT(owner, TRAIT_CUFFBREAKER, TRAUMA_TRAIT)
+
+/datum/discipline_power/potence/three/post_gain()
+	. = ..()
+	var/obj/item/organ/cyberimp/arm/potence/surgery_implant = new()
+	surgery_implant.Insert(owner)
 
 //POTENCE 4
 /datum/discipline_power/potence/four

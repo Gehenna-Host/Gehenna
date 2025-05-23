@@ -99,7 +99,7 @@
 
 	owner.transferItemToLoc(active_item, src, TRUE)
 	active_item = null
-	playsound(get_turf(owner), 'sound/mecha/mechmove03.ogg', 50, TRUE)
+	playsound(get_turf(owner), 'code/modules/wod13/sounds/potence_deactivate.ogg', 50, TRUE)
 
 /obj/item/organ/cyberimp/arm/proc/Extend(obj/item/item)
 	if(!(item in src))
@@ -135,7 +135,7 @@
 	owner.visible_message("<span class='notice'>[owner] extends [active_item] from [owner.p_their()] [zone == BODY_ZONE_R_ARM ? "right" : "left"] arm.</span>",
 		"<span class='notice'>You extend [active_item] from your [zone == BODY_ZONE_R_ARM ? "right" : "left"] arm.</span>",
 		"<span class='hear'>You hear a short mechanical noise.</span>")
-	playsound(get_turf(owner), 'sound/mecha/mechmove03.ogg', 50, TRUE)
+	playsound(get_turf(owner), 'code/modules/wod13/sounds/potence_activate.ogg', 50, TRUE)
 
 /obj/item/organ/cyberimp/arm/ui_action_click()
 	if((organ_flags & ORGAN_FAILING) || (!active_item && !contents.len))

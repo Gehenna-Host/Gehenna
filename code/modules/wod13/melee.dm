@@ -122,6 +122,7 @@
 /obj/item/melee/vampirearms/katana/fire
 	name = "burning katana"
 	icon_state = "firetana"
+	force = 40
 	pixel_w = -8
 	cost = 0
 	item_flags = DROPDEL
@@ -137,6 +138,7 @@
 /obj/item/melee/vampirearms/katana/blood
 	name = "bloody katana"
 	color = "#bb0000"
+	force = 40
 	pixel_w = -8
 	cost = 0
 	item_flags = DROPDEL
@@ -458,12 +460,30 @@
 	resistance_flags = FIRE_PROOF
 	is_iron = TRUE
 
+/obj/item/melee/vampirearms/protean
+	name = "claw"
+	icon = 'code/modules/wod13/weapons.dmi'
+	icon_state = "gangrel"
+	w_class = WEIGHT_CLASS_BULKY
+	force = 20
+	armour_penetration = 50
+	block_chance = 20
+	masquerade_violating = TRUE
+	is_iron = FALSE
+
+/obj/item/melee/vampirearms/protean/afterattack(atom/target, mob/living/carbon/user, proximity)
+	if(!proximity)
+		return
+	if(isliving(target))
+		var/mob/living/L = target
+		L.apply_damage(20, CLONE)
+
 /obj/item/melee/vampirearms/knife/gangrel
 	name = "claws"
 	icon_state = "gangrel"
 	w_class = WEIGHT_CLASS_BULKY
-	force = 20
-	armour_penetration = 100	//It's magical damage
+	force = 25
+	armour_penetration = 100
 	block_chance = 20
 	item_flags = DROPDEL
 	masquerade_violating = TRUE
@@ -478,18 +498,26 @@
 
 /obj/item/melee/vampirearms/knife/gangrel/lasombra
 	name = "shadow tentacle"
-	force = 15
-	armour_penetration = 100
-	block_chance = 0
 	icon_state = "lasombra"
 	masquerade_violating = TRUE
 
-/obj/item/melee/vampirearms/knife/gangrel/lasombra/afterattack(atom/target, mob/living/carbon/user, proximity)
+/obj/item/melee/vampirearms/knife/potence
+	name = "potent hand"
+	icon = 'icons/obj/items_and_weapons.dmi'
+	icon_state = "disintegrate"
+	inhand_icon_state = "disintegrate"
+	lefthand_file = 'icons/mob/inhands/misc/touchspell_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/misc/touchspell_righthand.dmi'
+	force = 20
+	armour_penetration = 30
+	color = "#00FFFF"
+
+/obj/item/melee/vampirearms/knife/potence/afterattack(atom/target, mob/living/carbon/user, proximity)
 	if(!proximity)
 		return
 	if(isliving(target))
 		var/mob/living/L = target
-		L.apply_damage(20, BURN)
+		L.apply_damage(20, CLONE)
 
 /obj/item/melee/touch_attack/werewolf
 	name = "\improper falling touch"
@@ -507,7 +535,6 @@
 		var/mob/living/L = target
 		L.AdjustKnockdown(4 SECONDS)
 		L.adjustStaminaLoss(50)
-		L.Immobilize(3 SECONDS)
 		if(L.body_position != LYING_DOWN)
 			L.toggle_resting()
 	return ..()
@@ -886,10 +913,10 @@
 	desc = "A monstrous weapon, made out of sharpened bone."
 	icon = 'code/modules/wod13/weapons.dmi'
 	icon_state = "armblade"
-	force = 35
+	force = 20
 	w_class = WEIGHT_CLASS_BULKY
 	block_chance = 40
-	armour_penetration = 40
+	armour_penetration = 30
 	sharpness = SHARP_EDGED
 	attack_verb_continuous = list("slashes", "cuts")
 	attack_verb_simple = list("slash", "cut")
@@ -899,13 +926,20 @@
 	resistance_flags = FIRE_PROOF
 	masquerade_violating = TRUE
 
+/obj/item/melee/vampirearms/tzimisce/afterattack(atom/target, mob/living/carbon/user, proximity)
+	if(!proximity)
+		return
+	if(isliving(target))
+		var/mob/living/L = target
+		L.apply_damage(20, CLONE)
+
 /obj/item/melee/vampirearms/tzimisce/venom
 	name = "nematocyst whip"
 	desc = "An elongated tendril covered with stinging cells."
 	icon = 'code/modules/wod13/weapons.dmi'
 	icon_state = "lasombra"
 	damtype = TOX
-	force = 16
+	force = 20
 	w_class = WEIGHT_CLASS_BULKY
 	block_chance = 10
 	armour_penetration = 10

@@ -17,7 +17,16 @@
 
 /obj/item/organ/cyberimp/arm/surgery/vicissitude
 	icon_state = "toolkit_implant_vic"
-	contents = newlist(/obj/item/retractor/augment/vicissitude, /obj/item/hemostat/augment/vicissitude, /obj/item/cautery/augment/vicissitude, /obj/item/surgicaldrill/augment/vicissitude, /obj/item/scalpel/augment/vicissitude, /obj/item/circular_saw/augment/vicissitude, /obj/item/surgical_drapes/vicissitude)
+	contents = newlist(/obj/item/healthanalyzer/augment/vicissitude, /obj/item/retractor/augment/vicissitude, /obj/item/hemostat/augment/vicissitude, /obj/item/cautery/augment/vicissitude, /obj/item/surgicaldrill/augment/vicissitude, /obj/item/scalpel/augment/vicissitude, /obj/item/circular_saw/augment/vicissitude, /obj/item/surgical_drapes/vicissitude)
+
+/obj/item/healthanalyzer/augment/vicissitude
+	name = "scanning eye"
+	desc = "An eye that can sense."
+	icon = 'icons/obj/surgery.dmi'
+	icon_state = "analyzer_vic"
+	lefthand_file = 'code/modules/wod13/righthand.dmi'
+	righthand_file = 'code/modules/wod13/lefthand.dmi'
+	masquerade_violating = TRUE
 
 /obj/item/retractor/augment/vicissitude
 	name = "retracting appendage"

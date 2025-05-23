@@ -12,6 +12,12 @@
 	activate_sound = 'code/modules/wod13/sounds/protean_activate.ogg'
 	deactivate_sound = 'code/modules/wod13/sounds/protean_deactivate.ogg'
 
+/obj/item/organ/cyberimp/arm/protean
+	name = "beast claw"
+	desc = "A beast's claws."
+	icon_state = "lasombra"
+	contents = newlist(/obj/item/melee/vampirearms/protean)
+
 //EYES OF THE BEAST
 /datum/discipline_power/protean/eyes_of_the_beast
 	name = "Eyes of the Beast"
@@ -71,6 +77,11 @@
 		qdel(G)
 	owner.remove_client_colour(/datum/client_colour/glass_colour/red)
 	owner.remove_movespeed_modifier(/datum/movespeed_modifier/protean2)
+
+/datum/discipline_power/protean/feral_claws/post_gain()
+	. = ..()
+	var/obj/item/organ/cyberimp/arm/protean/surgery_implant = new()
+	surgery_implant.Insert(owner)
 
 /mob/living/simple_animal/hostile/gangrel
 	name = "warform"
