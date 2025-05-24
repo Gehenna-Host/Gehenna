@@ -745,7 +745,7 @@
 	stamina = 20
 	hitsound = 'sound/effects/splat.ogg'
 	var/chain
-	var/knockdown_time = (0.3 SECONDS)
+	var/knockdown_time = (0.5 SECONDS)
 
 /obj/projectile/flesh_shintai/fire(setAngle)
 	if(firer)
@@ -1544,6 +1544,31 @@
 	cost_yang = 1
 	activate_sound = 'code/modules/wod13/sounds/stormshintai_activate.ogg'
 
+/obj/item/melee/touch_attack/storm_shintai
+	name = "Storm touch"
+	desc = "ELECTROCUTE YOURSELF!"
+	catchphrase = null
+	on_use_sound = 'code/modules/wod13/sounds/lightning.ogg'
+	icon_state = "zapper"
+	inhand_icon_state = "zapper"
+
+/obj/item/melee/touch_attack/storm_shintai/afterattack(atom/target, mob/living/carbon/human/user, proximity)
+	if(!proximity || target == user || !isliving(target) || !iscarbon(user)) //getting hard after touching yourself would also be bad
+		return
+	if(!(user.mobility_flags & MOBILITY_USE))
+		to_chat(user, "<span class='warning'>You can't reach out!</span>")
+		return
+	var/mob/living/human_target = target
+	if(human_target.anti_magic_check())
+		to_chat(user, "<span class='warning'>The spell can't seem to affect [human_target]!</span>")
+		to_chat(human_target, "<span class='warning'>You feel your flesh turn to stone for a moment, then revert back!</span>")
+		..()
+		return
+	human_target.electrocute_act(50, src, siemens_coeff = 1, flags = SHOCK_NOSTUN)
+	if(user.CheckEyewitness(user, user, 7, FALSE))
+		user.AdjustMasquerade(-1)
+	return ..()
+
 /obj/item/gun/magic/hook/storm_shintai
 	name = "electric hand"
 	ammo_type = /obj/item/ammo_casing/magic/hook/storm_shintai
@@ -1577,7 +1602,7 @@
 	stamina = 20
 	hitsound = 'code/modules/wod13/sounds/lightning.ogg'
 	var/chain
-	var/knockdown_time = (0.3 SECONDS)
+	var/knockdown_time = (0.5 SECONDS)
 
 /obj/projectile/storm_shintai/fire(setAngle)
 	if(firer)
@@ -1598,9 +1623,8 @@
 		playsound(get_turf(target), 'code/modules/wod13/sounds/lightning.ogg', 100, FALSE)
 		if (isliving(target))
 			var/mob/living/L = target
-			L.Stun(0.3 SECONDS)
-			L.electrocute_act(15, src, siemens_coeff = 1, flags = NONE)
-			L.apply_damage(20, BURN)
+			L.Stun(0.5 SECONDS)
+			L.electrocute_act(50, src, siemens_coeff = 1, flags = SHOCK_NOSTUN)
 			return
 
 /obj/projectile/storm_shintai/Destroy()
@@ -1623,7 +1647,7 @@
 					caster.remove_overlay(FORTITUDE_LAYER)
 		if(2)
 			caster.drop_all_held_items()
-			caster.put_in_active_hand(new /obj/item/melee/touch_attack/shock(caster))
+			caster.put_in_active_hand(new /obj/item/melee/touch_attack/storm_shintai(caster))
 		if(3)
 			caster.drop_all_held_items()
 			caster.put_in_active_hand(new /obj/item/gun/magic/hook/storm_shintai(caster))
