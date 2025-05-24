@@ -501,24 +501,6 @@
 	icon_state = "lasombra"
 	masquerade_violating = TRUE
 
-/obj/item/melee/vampirearms/knife/potence
-	name = "potent hand"
-	icon = 'icons/obj/items_and_weapons.dmi'
-	icon_state = "disintegrate"
-	inhand_icon_state = "disintegrate"
-	lefthand_file = 'icons/mob/inhands/misc/touchspell_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/misc/touchspell_righthand.dmi'
-	force = 20
-	armour_penetration = 30
-	color = "#00FFFF"
-
-/obj/item/melee/vampirearms/knife/potence/afterattack(atom/target, mob/living/carbon/user, proximity)
-	if(!proximity)
-		return
-	if(isliving(target))
-		var/mob/living/L = target
-		L.apply_damage(20, CLONE)
-
 /obj/item/melee/touch_attack/werewolf
 	name = "\improper falling touch"
 	desc = "This is kind of like when you rub your feet on a shag rug so you can zap your friends, only a lot less safe."
