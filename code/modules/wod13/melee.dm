@@ -122,7 +122,7 @@
 /obj/item/melee/vampirearms/katana/fire
 	name = "burning katana"
 	icon_state = "firetana"
-	force = 40
+	force = 45
 	pixel_w = -8
 	cost = 0
 	item_flags = DROPDEL
@@ -138,7 +138,7 @@
 /obj/item/melee/vampirearms/katana/blood
 	name = "bloody katana"
 	color = "#bb0000"
-	force = 40
+	force = 45
 	pixel_w = -8
 	cost = 0
 	item_flags = DROPDEL
