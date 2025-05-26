@@ -1571,6 +1571,7 @@
 		..()
 		return
 	human_target.electrocute_act(50, src, siemens_coeff = 1, flags = SHOCK_NOSTUN)
+	human_target.Knockdown(0.5 SECONDS)
 	if(user.CheckEyewitness(user, user, 7, FALSE))
 		user.AdjustMasquerade(-1)
 	return ..()
@@ -1629,7 +1630,7 @@
 		playsound(get_turf(target), 'code/modules/wod13/sounds/lightning.ogg', 100, FALSE)
 		if (isliving(target))
 			var/mob/living/L = target
-			L.Stun(0.5 SECONDS)
+			L.Knockdown(0.5 SECONDS)
 			L.electrocute_act(50, src, siemens_coeff = 1, flags = SHOCK_NOSTUN)
 			return
 
