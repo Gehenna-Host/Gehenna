@@ -7,7 +7,7 @@ SUBSYSTEM_DEF(humannpcpool)
 	wait = 30
 
 	var/list/currentrun = list()
-	var/npc_max = 300
+	var/npc_max = 220
 
 /datum/controller/subsystem/humannpcpool/stat_entry(msg)
 	var/list/activelist = GLOB.npc_list
@@ -16,7 +16,7 @@ SUBSYSTEM_DEF(humannpcpool)
 	return ..()
 
 /datum/controller/subsystem/humannpcpool/fire(resumed = FALSE)
-
+/*
 	if (!resumed)
 		var/list/activelist = GLOB.npc_list
 		src.currentrun = activelist.Copy()
@@ -38,7 +38,7 @@ SUBSYSTEM_DEF(humannpcpool)
 		if(MC_TICK_CHECK)
 			return
 		NPC.handle_automated_movement()
-
+*/
 /datum/controller/subsystem/humannpcpool/proc/npclost()
 	while(length(GLOB.alive_npc_list) < npc_max)
 		var/atom/kal = pick(GLOB.npc_spawn_points)
