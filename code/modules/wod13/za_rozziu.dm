@@ -13,7 +13,7 @@ SUBSYSTEM_DEF(zombiepool)
 	return ..()
 
 /datum/controller/subsystem/zombiepool/fire(resumed = FALSE)
-/*
+
 	if (!resumed)
 		var/list/activelist = GLOB.zombie_list
 		src.currentrun = activelist.Copy()
@@ -34,7 +34,7 @@ SUBSYSTEM_DEF(zombiepool)
 		if(MC_TICK_CHECK)
 			return
 		Z.handle_automated_patriotification()
-*/
+
 /obj/structure/vampgate
 	name = "Graveyard Gate"
 	desc = "It opens and closes."
