@@ -42,3 +42,10 @@
 
 /obj/item/vampirebook/quran/read_book(mob/living/carbon/human/user)
 	quote = pick(GLOB.quran_quotes)
+
+/obj/item/vampirebook/industrialsociety
+	name = "Industrial Society and Its Future"
+	icon_state = "industrialsociety"
+
+/obj/item/vampirebook/industrialsociety/read_book(mob/living/carbon/human/user)
+	quote = pick(GLOB.industrialsociety_quotes)
