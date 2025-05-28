@@ -1558,9 +1558,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			// Jobs can only be whitelisted under Trusted Player, so that's all it checks for.
 			var/required_playtime_remaining = job.required_playtime_remaining(user.client)
 			//<font color=red>text</font> (Zamenil potomu chto slishkom rezhet glaza
-			if(required_playtime_remaining || SSwhitelists.is_whitelisted(user.ckey, TRUSTED_PLAYER))
-				if(!bypass)
-					HTML += "<font color=#290204>[rank]</font></td><td><font color=#290204> \[ [get_exp_format(required_playtime_remaining)] as [job.get_exp_req_type()] \]</font></td></tr>"
+			if(required_playtime_remaining && !bypass && SSwhitelists.is_whitelisted(user.ckey, TRUSTED_PLAYER))
+				HTML += "<font color=#290204>[rank]</font></td><td><font color=#290204> \[ [get_exp_format(required_playtime_remaining)] as [job.get_exp_req_type()] \]</font></td></tr>"
 				continue
 			if(!job.player_old_enough(user.client) && !bypass)
 				var/available_in_days = job.available_in_days(user.client)
