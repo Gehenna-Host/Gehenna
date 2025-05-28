@@ -16,6 +16,8 @@
 #define MAX_PUBLIC_GENERATION 10
 /// Limit for lowest trusted player generation
 #define MAX_TRUSTED_GENERATION 8
+/// Limit for lowest veteran generation
+#define MAX_VETERAN_GENERATION 9
 /// The default generation everyone begins at
 #define DEFAULT_GENERATION 13
 
