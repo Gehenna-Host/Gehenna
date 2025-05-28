@@ -101,7 +101,7 @@ SUBSYSTEM_DEF(job)
 				return FALSE
 		if(!job.player_old_enough(player.client) && !bypass)
 			return FALSE
-		if(job.required_playtime_remaining(player.client) && !bypass && !SSwhitelists.is_whitelisted(player.ckey, TRUSTED_PLAYER))
+		if(job.required_playtime_remaining(player.client) && !bypass || !SSwhitelists.is_whitelisted(player.ckey, TRUSTED_PLAYER))
 			return FALSE
 		if(!job.is_character_old_enough(player.client.prefs.total_age) && !bypass)
 			return FALSE
@@ -148,7 +148,7 @@ SUBSYSTEM_DEF(job)
 		if(!job.player_old_enough(player.client) && !bypass)
 			JobDebug("FOC player not old enough, Player: [player]")
 			continue
-		if(job.required_playtime_remaining(player.client) && !bypass && !SSwhitelists.is_whitelisted(player.ckey, TRUSTED_PLAYER))
+		if(job.required_playtime_remaining(player.client) && !bypass || !SSwhitelists.is_whitelisted(player.ckey, TRUSTED_PLAYER))
 			JobDebug("FOC player not enough xp, Player: [player]")
 			continue
 		if(!job.is_character_old_enough(player.client.prefs.total_age) && !bypass)
@@ -224,7 +224,7 @@ SUBSYSTEM_DEF(job)
 			JobDebug("GRJ player not old enough, Player: [player]")
 			continue
 
-		if(job.required_playtime_remaining(player.client) && !SSwhitelists.is_whitelisted(player.ckey, TRUSTED_PLAYER))
+		if(job.required_playtime_remaining(player.client) || !SSwhitelists.is_whitelisted(player.ckey, TRUSTED_PLAYER))
 			JobDebug("GRJ player not enough xp, Player: [player]")
 			continue
 
@@ -425,7 +425,7 @@ SUBSYSTEM_DEF(job)
 					JobDebug("DO player not old enough, Player: [player], Job:[job.title]")
 					continue
 
-				if(job.required_playtime_remaining(player.client) && !bypass && !SSwhitelists.is_whitelisted(player.ckey, TRUSTED_PLAYER))
+				if(job.required_playtime_remaining(player.client) && !bypass || !SSwhitelists.is_whitelisted(player.ckey, TRUSTED_PLAYER))
 					JobDebug("DO player not enough xp, Player: [player], Job:[job.title]")
 					continue
 
@@ -703,7 +703,7 @@ SUBSYSTEM_DEF(job)
 			if(!job.player_old_enough(player.client))
 				young++
 				continue
-			if(job.required_playtime_remaining(player.client) && !SSwhitelists.is_whitelisted(player.ckey, TRUSTED_PLAYER))
+			if(job.required_playtime_remaining(player.client) || !SSwhitelists.is_whitelisted(player.ckey, TRUSTED_PLAYER))
 				young++
 				continue
 			switch(player.client.prefs.job_preferences[job.title])

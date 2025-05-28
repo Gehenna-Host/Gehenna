@@ -8,7 +8,7 @@
 	use_skintones = TRUE
 	limbs_id = "human"
 	wings_icon = "Dragon"
-	brutemod = 0.75
+	brutemod = 1
 	heatmod = 1
 	burnmod = 1
 	dust_anim = "dust-h"
