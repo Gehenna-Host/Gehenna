@@ -8,7 +8,7 @@
 	use_skintones = TRUE
 	limbs_id = "human"
 	mutant_bodyparts = list("tail_human" = "None", "ears" = "None", "wings" = "None")
-	brutemod = 1	//0.8 instead, if changing.
+	brutemod = 0.9
 	burnmod = 1
 	punchdamagelow = 10
 	punchdamagehigh = 20

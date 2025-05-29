@@ -55,7 +55,7 @@
 	use_skintones = TRUE
 	limbs_id = "human"
 	wings_icon = "None"
-	brutemod = 1
+	brutemod = 0.8
 	heatmod = 1
 	burnmod = 3
 	dust_anim = "dust-k"
