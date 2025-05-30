@@ -417,6 +417,11 @@
 	desc = "Some Gumma Guts clothes."
 	icon_state = "gummaguts"
 
+/obj/item/clothing/under/vampire/blackpants
+	name = "black pants"
+	desc = "Some black pants."
+	icon_state = "black_pants"
+
 
 //PENTEX
 /obj/item/clothing/under/pentex

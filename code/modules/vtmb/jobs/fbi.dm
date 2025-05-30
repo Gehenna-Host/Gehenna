@@ -24,7 +24,7 @@
 	minimal_masquerade = 0
 	exp_requirements = 180
 	known_contacts = list("Police Chief")
-	whitelisted = TRUE
+	whitelisted = FALSE
 
 /datum/outfit/job/fbi
 	name = "Federal Investigator"
