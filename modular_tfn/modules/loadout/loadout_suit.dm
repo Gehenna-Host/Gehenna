@@ -52,7 +52,7 @@
 	path = /obj/item/clothing/suit/vampire/fancy_red
 
 /datum/gear/suit/jacket/gosling
-	display_name = "jacket, scorpian"
+	display_name = "jacket, scorpion"
 	path = /obj/item/clothing/suit/vampire/gosling_jacket
 
 /datum/gear/suit/jacket/black_leather

@@ -122,7 +122,7 @@
 		new /datum/data/mining_equipment("black leather jacket",	/obj/item/clothing/suit/vampire/jacket,	15),
 		new /datum/data/mining_equipment("black coat",	/obj/item/clothing/suit/vampire/coat/winter,	15),
 		new /datum/data/mining_equipment("red coat",	/obj/item/clothing/suit/vampire/coat/winter/alt,	15),
-		new /datum/data/mining_equipment("scorpian jacket",	/obj/item/clothing/suit/vampire/gosling_jacket,	100),
+		new /datum/data/mining_equipment("scorpion jacket",	/obj/item/clothing/suit/vampire/gosling_jacket,	100),
 		new /datum/data/mining_equipment("yellow aviators",	/obj/item/clothing/glasses/vampire/yellow,	20),
 		new /datum/data/mining_equipment("red aviators",	/obj/item/clothing/glasses/vampire/red,	20),
 		new /datum/data/mining_equipment("sunglasses",	/obj/item/clothing/glasses/vampire/sun,	20),

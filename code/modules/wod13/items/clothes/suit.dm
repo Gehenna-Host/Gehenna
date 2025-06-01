@@ -407,7 +407,7 @@
 	icon_state = "majima_jacket"
 
 /obj/item/clothing/suit/vampire/gosling_jacket
-	name = "scorpian jacket"
+	name = "scorpion jacket"
 	desc = "Hes literally me."
 	icon_state = "gosling"
 	armor = list(MELEE = 25, BULLET = 25, LASER = 10, ENERGY = 10, BOMB = 25, BIO = 0, RAD = 0, FIRE = 25, ACID = 10, WOUND = 25)
