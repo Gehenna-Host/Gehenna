@@ -22,5 +22,6 @@
 
 /datum/gear/gloves/white
 	display_name = "gloves, white"
+	description = "	A pair of fine, white gloves."
 	path = /obj/item/clothing/gloves/vampire/white
 
