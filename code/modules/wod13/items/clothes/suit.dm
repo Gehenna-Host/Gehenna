@@ -406,6 +406,12 @@
 	desc = "Woahhh, check it out! Two macho men havin' a tussle in the nude!? This is a world of shit I didn't know even existed..."
 	icon_state = "majima_jacket"
 
+/obj/item/clothing/suit/vampire/gosling_jacket
+	name = "scorpion jacket"
+	desc = "Hes literally me."
+	icon_state = "gosling"
+	armor = list(MELEE = 25, BULLET = 25, LASER = 10, ENERGY = 10, BOMB = 25, BIO = 0, RAD = 0, FIRE = 25, ACID = 10, WOUND = 25)
+
 /obj/item/clothing/suit/vampire/bahari
 	name = "dark mother's suit"
 	desc = "When I first tasted the fruit of the Trees,\
