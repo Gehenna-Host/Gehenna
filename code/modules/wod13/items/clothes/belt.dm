@@ -33,13 +33,11 @@
 	component_type = /datum/component/storage/concrete/vtm/belt
 
 /obj/item/storage/belt/police/full/PopulateContents()
-	new /obj/item/gun/energy/taser/twoshot(src)
 	new /obj/item/gun/ballistic/automatic/vampire/m1911(src)
 
 /obj/item/storage/belt/police/swat
 
 /obj/item/storage/belt/police/swat/full/PopulateContents()
-	new /obj/item/gun/energy/taser/twoshot(src)
 	new /obj/item/reagent_containers/spray/pepper(src)
 	new /obj/item/restraints/handcuffs(src)
 	new /obj/item/ammo_box/magazine/vamp556(src)

@@ -437,6 +437,18 @@
 	icon_state = "vestments"
 	armor = list(MELEE = 10, BULLET = 0, LASER = 10, ENERGY = 10, BOMB = 10, BIO = 0, RAD = 0, FIRE = 0, ACID = 10, WOUND = 10)
 
+/obj/item/clothing/suit/vampire/blackjacket
+	name = "A black jacket"
+	desc = "A black jacket with fur."
+	icon_state = "jacket_black"
+	armor = list(MELEE = 10, BULLET = 0, LASER = 10, ENERGY = 10, BOMB = 10, BIO = 0, RAD = 0, FIRE = 0, ACID = 10, WOUND = 10)
+
+/obj/item/clothing/suit/vampire/silverjacket
+	name = "A black jacket"
+	desc = "A black jacket with silver linings."
+	icon_state = "silverjacket"
+	armor = list(MELEE = 10, BULLET = 0, LASER = 10, ENERGY = 10, BOMB = 10, BIO = 0, RAD = 0, FIRE = 0, ACID = 10, WOUND = 10)
+
 //Pentex Overwear
 
 /obj/item/clothing/suit/pentex

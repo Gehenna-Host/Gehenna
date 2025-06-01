@@ -3357,6 +3357,8 @@
 #include "code\modules\vtmb\electronics\computers\app_types.dm"
 #include "code\modules\vtmb\electronics\computers\computer.dm"
 #include "code\modules\vtmb\electronics\keypads\keypad.dm"
+#include "code\modules\vtmb\electronics\machines\A_pyxis_stock.dm"
+#include "code\modules\vtmb\electronics\machines\B_pyxis_machine.dm"
 #include "code\modules\vtmb\electronics\phones\phone.dm"
 #include "code\modules\vtmb\electronics\phones\phone_contact.dm"
 #include "code\modules\vtmb\electronics\phones\phone_history.dm"
@@ -3614,5 +3616,4 @@
 #include "modular_tfn\modules\morality\morality_component.dm"
 #include "modular_tfn\modules\panicbunker\code\panicbunker.dm"
 #include "modular_tfn\modules\subtle\subtle.dm"
-#include "modular_tfn\modules\taser_tfn13\taser_tfn13.dm"
 // END_INCLUDE

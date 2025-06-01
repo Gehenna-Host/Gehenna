@@ -1571,7 +1571,7 @@
 		..()
 		return
 	human_target.electrocute_act(50, src, siemens_coeff = 1, flags = SHOCK_NOSTUN)
-	human_target.Knockdown(2 SECONDS)
+	human_target.Knockdown(4 SECONDS)
 	if(user.CheckEyewitness(user, user, 7, FALSE))
 		user.AdjustMasquerade(-1)
 	return ..()
@@ -1609,7 +1609,7 @@
 	stamina = 20
 	hitsound = 'code/modules/wod13/sounds/lightning.ogg'
 	var/chain
-	var/knockdown_time = (2 SECONDS)
+	var/knockdown_time = (4 SECONDS)
 
 /obj/projectile/storm_shintai/fire(setAngle)
 	if(firer)
@@ -1630,7 +1630,7 @@
 		playsound(get_turf(target), 'code/modules/wod13/sounds/lightning.ogg', 100, FALSE)
 		if (isliving(target))
 			var/mob/living/L = target
-			L.Knockdown(0.5 SECONDS)
+			L.Knockdown(4 SECONDS)
 			L.electrocute_act(50, src, siemens_coeff = 1, flags = SHOCK_NOSTUN)
 			return
 

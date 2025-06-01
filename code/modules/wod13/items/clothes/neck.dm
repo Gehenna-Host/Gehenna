@@ -33,6 +33,14 @@
 	name = "white scarf"
 	icon_state = "scarf_white"
 
+/obj/item/clothing/neck/vampire/scarf/redstripe
+	name = "red scarf"
+	icon_state = "red_scarf"
+
+/obj/item/clothing/neck/vampire/scarf/bluestripe
+	name = "blue scarf"
+	icon_state = "blue_scarf"
+
 /obj/item/clothing/neck/vampire/prayerbeads
 	name = "prayer beads"
 	desc = "These beads are used for prayer."

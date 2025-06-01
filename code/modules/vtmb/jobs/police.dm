@@ -116,8 +116,3 @@
 	r_pocket = /obj/item/vamp/keys/police/secure/chief
 	backpack_contents = list(/obj/item/passport=1, /obj/item/vamp/creditcard=1, /obj/item/restraints/handcuffs = 1,/obj/item/melee/classic_baton/vampire = 1, /obj/item/storage/firstaid/ifak = 1, /obj/item/reagent_containers/spray/pepper = 1, /obj/item/ammo_box/magazine/vamp45acp = 2)
 
-
-/datum/outfit/job/police_chief/post_equip(mob/living/carbon/human/H)
-	..()
-	var/datum/martial_art/martial_art = new /datum/martial_art/cqc
-	martial_art.teach(H)

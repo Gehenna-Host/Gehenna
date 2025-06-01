@@ -7,7 +7,7 @@
 /// Limit for highest generation possible
 #define HIGHEST_GENERATION_LIMIT 14
 /// Limit for lowest generation possible
-#define LOWEST_GENERATION_LIMIT 7
+#define LOWEST_GENERATION_LIMIT 8
 /// Limit for public generation bonus
 #define MAX_GENERATION_BONUS 3
 /// Limit for trusted player generation bonus

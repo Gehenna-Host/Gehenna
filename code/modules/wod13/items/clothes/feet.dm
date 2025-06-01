@@ -70,3 +70,8 @@
 	desc = "Shoes with a metal tip."
 	icon_state = "metal_shoes"
 
+/obj/item/clothing/shoes/vampire/kneeboots
+	name = "kneeboots"
+	desc = "A pair of kneeboots."
+	icon_state = "kneeboots"
+

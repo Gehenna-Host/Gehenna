@@ -188,6 +188,26 @@
 	desc = "Some usual clothes."
 	icon_state = "emo"
 
+/obj/item/clothing/under/vampire/blackpants
+	name = "black pants"
+	desc = "Some black pants."
+	icon_state = "black_pants"
+
+/obj/item/clothing/under/vampire/tacturtleneck
+	name = "tactical turtleneck"
+	desc = "A tactical turtleneck."
+	icon_state = "turtleneck_tac"
+
+/obj/item/clothing/under/vampire/redvest
+	name = "red vest"
+	desc = "A vest with a red shirt."
+	icon_state = "redvest"
+
+/obj/item/clothing/under/vampire/blackshorts
+	name = "black shorts"
+	desc = "A pair of black shorts."
+	icon_state = "blackshorts"
+
 //WOMEN
 
 /obj/item/clothing/under/vampire/black
@@ -416,21 +436,6 @@
 	name = "gummaguts uniform"
 	desc = "Some Gumma Guts clothes."
 	icon_state = "gummaguts"
-
-/obj/item/clothing/under/vampire/blackpants
-	name = "black pants"
-	desc = "Some black pants."
-	icon_state = "black_pants"
-
-/obj/item/clothing/under/vampire/tacturtleneck
-	name = "tactical turtleneck"
-	desc = "A tactical turtleneck."
-	icon_state = "turtleneck_tac"
-
-/obj/item/clothing/under/vampire/redvest
-	name = "red vest"
-	desc = "A vest with a red shirt."
-	icon_state = "redvest"
 
 //PENTEX
 /obj/item/clothing/under/pentex

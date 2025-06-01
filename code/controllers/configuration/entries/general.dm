@@ -247,16 +247,16 @@
 	config_entry_value = "https://wiki.wod13.org"
 
 /datum/config_entry/string/forumurl
-	config_entry_value = "https://discord.com/invite/hQHAK67Drd"
+	config_entry_value = "https://discord.gg/6YNKYFAWfd"
 
 /datum/config_entry/string/discordurl
-	config_entry_value = "https://discord.com/invite/hQHAK67Drd"
+	config_entry_value = "https://discord.gg/6YNKYFAWfd"
 
 /datum/config_entry/string/rulesurl
-	config_entry_value = ""
+	config_entry_value = "https://discord.gg/6YNKYFAWfd"
 
 /datum/config_entry/string/githuburl
-	config_entry_value = "https://github.com/Near-Web/The-Final-Nights"
+	config_entry_value = "https://github.com/Gehenna-Host/Gehenna"
 /datum/config_entry/string/discordbotcommandprefix
 	config_entry_value = "?"
 

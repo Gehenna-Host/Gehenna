@@ -153,7 +153,7 @@
 		to_chat(user, span_warning("You can't emote at this time."))
 		return FALSE
 
-	user.log_message(subtler_message, LOG_SUBTLER)
+	//user.log_message(subtler_message, LOG_SUBTLER) Commenting in case having this unlogged is an issue.
 
 	var/space = should_have_space_before_emote(html_decode(subtler_emote)[1]) ? " " : ""
 

@@ -251,9 +251,9 @@
 
 /obj/machinery/mineral/equipment_vendor/restricted/police
 	jobs_allowed = list(
-		"Police Officer" = 200,
-		"Federal Investigator" = 300,
-		"Police Sergeant" = 500,
+		"Police Officer" = 500,
+		"Federal Investigator" = 600,
+		"Police Sergeant" = 700,
 		"Police Chief" = 15000,	// don't you love the militirization of the police?
 	)
 	prize_list = list(
