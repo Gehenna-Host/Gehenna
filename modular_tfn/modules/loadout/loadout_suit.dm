@@ -51,6 +51,10 @@
 	display_name = "fancy jacket, red"
 	path = /obj/item/clothing/suit/vampire/fancy_red
 
+/datum/gear/suit/jacket/gosling
+	display_name = "jacket, scoprian"
+	path = /obj/item/clothing/suit/vampire/gosling_jacket
+
 /datum/gear/suit/jacket/black_leather
 	display_name = "jacket, black leather"
 	description = "	True clothing for any punk."

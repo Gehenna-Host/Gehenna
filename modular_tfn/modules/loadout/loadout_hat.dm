@@ -97,8 +97,8 @@
 	display_name = "cap, grey"
 	path = /obj/item/clothing/head/vampire/baseball/grey
 
-/datum/gear/hat/baseball_cap/grey
-	display_name = "cap, grey"
+/datum/gear/hat/baseball_cap/white
+	display_name = "cap, white"
 	path = /obj/item/clothing/head/vampire/baseball/white
 
 //fedora
