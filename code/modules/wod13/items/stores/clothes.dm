@@ -23,7 +23,6 @@
 		new /datum/data/mining_equipment("comedy mask", /obj/item/clothing/mask/vampire/comedy,	25),
 		new /datum/data/mining_equipment("tragedy mask", /obj/item/clothing/mask/vampire/tragedy,	25),
 		new /datum/data/mining_equipment("shemagh",	 /obj/item/clothing/mask/vampire/shemagh,	20),
-		// TFN EDIT ADDITION START: re-add robes and hats
 		new /datum/data/mining_equipment("white robes",	/obj/item/clothing/suit/hooded/robes,	40),
 		new /datum/data/mining_equipment("black robes",	/obj/item/clothing/suit/hooded/robes/black,	40),
 		new /datum/data/mining_equipment("grey robes",	/obj/item/clothing/suit/hooded/robes/grey,	40),
@@ -42,7 +41,6 @@
 		new /datum/data/mining_equipment("white wizard hat",	/obj/item/clothing/head/vampire/wizard/white, 25),
 		new /datum/data/mining_equipment("black wizard hat",	/obj/item/clothing/head/vampire/wizard/black, 25),
 		new /datum/data/mining_equipment("purple wizard hat",	/obj/item/clothing/head/vampire/wizard/purple, 25),
-		// TFN EDIT ADDITION END
 	)
 
 
@@ -124,6 +122,7 @@
 		new /datum/data/mining_equipment("black leather jacket",	/obj/item/clothing/suit/vampire/jacket,	15),
 		new /datum/data/mining_equipment("black coat",	/obj/item/clothing/suit/vampire/coat/winter,	15),
 		new /datum/data/mining_equipment("red coat",	/obj/item/clothing/suit/vampire/coat/winter/alt,	15),
+		new /datum/data/mining_equipment("scorpion jacket",	/obj/item/clothing/suit/vampire/gosling_jacket,	100),
 		new /datum/data/mining_equipment("yellow aviators",	/obj/item/clothing/glasses/vampire/yellow,	20),
 		new /datum/data/mining_equipment("red aviators",	/obj/item/clothing/glasses/vampire/red,	20),
 		new /datum/data/mining_equipment("sunglasses",	/obj/item/clothing/glasses/vampire/sun,	20),
@@ -136,6 +135,10 @@
 		new /datum/data/mining_equipment("red bandana",	/obj/item/clothing/head/vampire/bandana/red,	10),
 		new /datum/data/mining_equipment("black bandana",	/obj/item/clothing/head/vampire/bandana/black,	10),
 		new /datum/data/mining_equipment("baseball cap", /obj/item/clothing/head/vampire/baseballcap, 10),
+		new /datum/data/mining_equipment("black fedora", /obj/item/clothing/head/vampire/fedora, 20),
+		new /datum/data/mining_equipment("grey fedora", /obj/item/clothing/head/vampire/fedora/grey, 20),
+		new /datum/data/mining_equipment("brown flat cap", /obj/item/clothing/head/vampire/flatcap, 20),
+		new /datum/data/mining_equipment("black flat cap", /obj/item/clothing/head/vampire/flatcap/black, 20),
 		new /datum/data/mining_equipment("ushanka",	/obj/item/clothing/head/vampire/ushanka, 20),
 		new /datum/data/mining_equipment("beanie",	/obj/item/clothing/head/vampire/beanie,	10),
 		new /datum/data/mining_equipment("black beanie",	/obj/item/clothing/head/vampire/beanie/black,	10),
@@ -163,4 +166,18 @@
 		new /datum/data/mining_equipment("backpack",	/obj/item/storage/backpack,		100),
 		new /datum/data/mining_equipment("satchel",		/obj/item/storage/backpack/satchel,		100),
 		new /datum/data/mining_equipment("leather satchel",		/obj/item/storage/backpack/satchel/leather,		150),
+	)
+
+/obj/machinery/mineral/equipment_vendor/fastfood/sports
+	desc = "Lets go baseball!"
+	prize_list = list(
+		new /datum/data/mining_equipment("mets cap",	/obj/item/clothing/head/vampire/baseball/mets,	10),
+		new /datum/data/mining_equipment("dodgers cap",	/obj/item/clothing/head/vampire/baseball/dodgers,	10),
+		new /datum/data/mining_equipment("giants cap",	/obj/item/clothing/head/vampire/baseball/giants,	10),
+		new /datum/data/mining_equipment("yankees cap",	/obj/item/clothing/head/vampire/baseball/yankees,	10),
+		new /datum/data/mining_equipment("brimless yankees cap", /obj/item/clothing/head/vampire/baseball/yankees/nobrim,	10),
+		new /datum/data/mining_equipment("red cap",	/obj/item/clothing/head/vampire/baseball/red,	10),
+		new /datum/data/mining_equipment("grey cap",	/obj/item/clothing/head/vampire/baseball/grey,	10),
+		new /datum/data/mining_equipment("white cap", /obj/item/clothing/head/vampire/baseball/white,	10),
+		new /datum/data/mining_equipment("baseball bat", /obj/item/melee/vampirearms/baseball,	200),
 	)
