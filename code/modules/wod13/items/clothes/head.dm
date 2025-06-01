@@ -116,6 +116,19 @@
 	desc = "Yee, and I do not often say this, haw."
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 0, ACID = 0, WOUND = 0)
 
+/obj/item/clothing/head/vampire/cowboy/black
+	name = "cowboy hat"
+	desc = "Looks cool anyway. Provides some kind of protection."
+	icon_state = "cowboy2
+	armor = list(MELEE = 20, BULLET = 20, LASER = 10, ENERGY = 10, BOMB = 10, BIO = 0, RAD = 0, FIRE = 0, ACID = 10, WOUND = 10)
+
+/obj/item/clothing/head/vampire/cowboy/black/armorless
+	name = "cowboy hat"
+	desc = "Yee, and I do not often say this, haw."
+	icon_state = "cowboy2
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 0, ACID = 0, WOUND = 0)
+
+
 /obj/item/clothing/head/vampire/british
 	name = "british police hat"
 	desc = "Want some tea? Provides some kind of protection."
@@ -139,6 +152,93 @@
 	desc = "Damn... Provides some kind of protection."
 	icon_state = "skull"
 	armor = list(MELEE = 20, BULLET = 20, LASER = 10, ENERGY = 10, BOMB = 10, BIO = 0, RAD = 0, FIRE = 0, ACID = 10, WOUND = 10)
+
+/obj/item/clothing/head/vampire/fedora //r/Athiesm
+	name = "black fedora"
+	desc = "In this moment, I am euphoric."
+	icon_state = "fedora"
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 0, ACID = 0, WOUND = 0)
+
+/obj/item/clothing/head/vampire/fedora/grey
+	name = "grey fedora"
+	icon_state = "fedora_grey"
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 0, ACID = 0, WOUND = 0)
+
+/obj/item/clothing/head/vampire/beret
+	name = "green beret"
+	desc = "A stylish beret."
+	icon_state = "beret_green"
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 0, ACID = 0, WOUND = 0)
+
+/obj/item/clothing/head/vampire/beret/red
+	name = "red beret"
+	icon_state = "beret_red"
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 0, ACID = 0, WOUND = 0)
+
+/obj/item/clothing/head/vampire/beret/white
+	name = "white beret"
+	icon_state = "beret_white"
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 0, ACID = 0, WOUND = 0)
+
+/obj/item/clothing/head/vampire/baseball/mets
+	name = "mets cap"
+	desc = "Its about the mets baby!"
+	icon_state = "cap_mets"
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 0, ACID = 0, WOUND = 0)
+
+/obj/item/clothing/head/vampire/baseball/dodgers
+	name = "dodgers cap"
+	desc = "A baseball cap for the L.A. Dodgers."
+	icon_state = "cap_la"
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 0, ACID = 0, WOUND = 0)
+
+
+/obj/item/clothing/head/vampire/baseball/giants
+	name = "giants cap"
+	desc = "A baseball cap for the San Francisco Giants."
+	icon_state = "cap_sf"
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 0, ACID = 0, WOUND = 0)
+
+/obj/item/clothing/head/vampire/baseball/yankees
+	name = "yankees cap"
+	desc = "A baseball cap for the New York Yankees."
+	icon_state = "cap_ny"
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 0, ACID = 0, WOUND = 0)
+
+/obj/item/clothing/head/vampire/baseball/yankees/nobrim
+	name = "yankees cap"
+	desc = "Yankee with no brim."
+	icon_state = "cap_ny_nobrim"
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 0, ACID = 0, WOUND = 0)
+
+/obj/item/clothing/head/vampire/baseball/red
+	name = "red cap"
+	desc = "A stylish red baseball cap."
+	icon_state = "cap_red"
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 0, ACID = 0, WOUND = 0)
+
+/obj/item/clothing/head/vampire/baseball/grey
+	name = "grey cap"
+	desc = "A stylish grey baseball cap."
+	icon_state = "cap_grey"
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 0, ACID = 0, WOUND = 0)
+
+/obj/item/clothing/head/vampire/baseball/white
+	name = "white cap"
+	desc = "A stylish white baseball cap."
+	icon_state = "cap_white"
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 0, ACID = 0, WOUND = 0)
+
+/obj/item/clothing/head/vampire/flatcap
+	name = "brown flat cap"
+	desc = "Useful for hiding a bald spot."
+	icon_state = "flatcap_brown"
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 0, ACID = 0, WOUND = 0)
+
+/obj/item/clothing/head/vampire/flatcap/black
+	name = "black flat cap"
+	icon_state = "flatcap_black"
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 0, ACID = 0, WOUND = 0)
 
 /obj/item/clothing/head/vampire/helmet
 	name = "police helmet"

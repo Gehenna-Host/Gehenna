@@ -19,3 +19,8 @@
 /datum/gear/gloves/black
 	display_name = "gloves, black"
 	path = /obj/item/clothing/gloves/vampire/work
+
+/datum/gear/gloves/white
+	display_name = "gloves, white"
+	path = /obj/item/clothing/gloves/vampire/white
+
