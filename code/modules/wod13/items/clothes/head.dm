@@ -119,15 +119,14 @@
 /obj/item/clothing/head/vampire/cowboy/black
 	name = "cowboy hat"
 	desc = "Looks cool anyway. Provides some kind of protection."
-	icon_state = "cowboy2
+	icon_state = "cowboy2"
 	armor = list(MELEE = 20, BULLET = 20, LASER = 10, ENERGY = 10, BOMB = 10, BIO = 0, RAD = 0, FIRE = 0, ACID = 10, WOUND = 10)
 
 /obj/item/clothing/head/vampire/cowboy/black/armorless
 	name = "cowboy hat"
 	desc = "Yee, and I do not often say this, haw."
-	icon_state = "cowboy2
+	icon_state = "cowboy2"
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 0, ACID = 0, WOUND = 0)
-
 
 /obj/item/clothing/head/vampire/british
 	name = "british police hat"
@@ -191,7 +190,6 @@
 	desc = "A baseball cap for the L.A. Dodgers."
 	icon_state = "cap_la"
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 0, ACID = 0, WOUND = 0)
-
 
 /obj/item/clothing/head/vampire/baseball/giants
 	name = "giants cap"
