@@ -73,6 +73,14 @@
 	always_available = FALSE
 	category = CAT_TZIMISCE
 
+/datum/crafting_recipe/tzi_armblade
+	name = "Arm blade"
+	time = 50
+	reqs = list(/obj/item/stack/human_flesh = 25, /obj/item/bodypart/r_arm = 1)
+	result = /obj/item/organ/cyberimp/arm/tzimisce
+	always_available = FALSE
+	category = CAT_TZIMISCE
+
 /datum/crafting_recipe/tzi_eyes
 	name = "Better Eyes (Nightvision)"
 	time = 50
@@ -97,7 +105,6 @@
 	always_available = FALSE
 	category = CAT_TZIMISCE
 
-//unused due to being bad
 /datum/crafting_recipe/tzi_koldun
 	name = "Koldun Sorcery (Firebreath)"
 	time = 50
@@ -511,7 +518,7 @@
 	armor_modifiers = list(MELEE = 0.3, BULLET = 0.3, LASER = 1.2, ENERGY = 1.2, BOMB = 0.3, BIO = 0, RAD = 0.7, FIRE = 1, ACID = 1)
 	item_sound_override = 'sound/effects/meatslap.ogg'
 	turf_sound_override = FOOTSTEP_MEAT
-	
+
 /datum/material/vicissitude_flesh/on_removed(atom/source, amount, material_flags)
 	. = ..()
 	qdel(source.GetComponent(/datum/component/edible))

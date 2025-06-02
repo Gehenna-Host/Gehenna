@@ -502,27 +502,27 @@
 			var/torpor_length = 0 SECONDS
 			switch(vampire.morality_path.score)
 				if(10)
-					torpor_length = 5 MINUTES
+					torpor_length = 300 SECONDS
 				if(9)
-					torpor_length = 10 MINUTES
+					torpor_length = 340 SECONDS
 				if(8)
-					torpor_length = 15 MINUTES
+					torpor_length = 380 SECONDS
 				if(7)
-					torpor_length = 20 MINUTES
+					torpor_length = 420 SECONDS
 				if(6)
-					torpor_length = 20 MINUTES
+					torpor_length = 460 SECONDS
 				if(5)
-					torpor_length = 25 MINUTES
+					torpor_length = 500 SECONDS
 				if(4)
-					torpor_length = 25 MINUTES
+					torpor_length = 540 SECONDS
 				if(3)
-					torpor_length = 30 MINUTES
+					torpor_length = 580 SECONDS
 				if(2)
-					torpor_length = 35 MINUTES
+					torpor_length = 620 SECONDS
 				if(1)
-					torpor_length = 1 HOURS
+					torpor_length = 660 SECONDS
 				else
-					torpor_length = 5 HOURS
+					torpor_length = 700 SECONDS
 			COOLDOWN_START(vampire_species, torpor_timer, torpor_length)
 		if (iscathayan(src))
 			var/mob/living/carbon/human/cathayan = src

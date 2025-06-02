@@ -352,8 +352,6 @@
 	. = ..()
 	var/datum/action/basic_vicissitude/vicissitude_upgrade = new()
 	vicissitude_upgrade.Grant(owner)
-	var/obj/item/organ/cyberimp/arm/tzimisce/armblade = new()
-	armblade.Insert(owner)
 
 	if (!owner.mind)
 		return
@@ -367,6 +365,8 @@
 	owner.mind.teach_crafting_recipe(/datum/crafting_recipe/tzijelly)
 	owner.mind.teach_crafting_recipe(/datum/crafting_recipe/tzicreature)
 	owner.mind.teach_crafting_recipe(/datum/crafting_recipe/cattzi)
+	owner.mind.teach_crafting_recipe(/datum/crafting_recipe/tzi_armblade)
+	owner.mind.teach_crafting_recipe(/datum/crafting_recipe/tzi_koldun)
 
 /datum/action/basic_vicissitude
 	name = "Vicissitude Upgrade"
