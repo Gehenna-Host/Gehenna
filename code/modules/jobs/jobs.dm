@@ -99,23 +99,20 @@ GLOBAL_LIST_INIT(church_positions, list(
 ))
 
 GLOBAL_LIST_INIT(gang_positions, list(
-	"Triad Soldier",
+	"Triad Boss",
+	"Triad Soldier"
 ))
 
 GLOBAL_LIST_INIT(painted_positions, list(
     "Painted City Councillor",
 	"Painted City Keeper",
-	"Painted City Truthcatcher",
-	"Painted City Warder",
 	"Painted City Guardian"
 ))
 
 GLOBAL_LIST_INIT(amberglade_positions, list(
-    "Amberglade Councillor",
-	"Amberglade Keeper",
-	"Amberglade Truthcatcher",
-	"Amberglade Warder",
-	"Amberglade Guardian"
+    "Burnt Tree Councillor",
+	"Burnt Tree Keeper",
+	"Burnt Tree Guardian"
 ))
 
 GLOBAL_LIST_INIT(spiral_positions, list(

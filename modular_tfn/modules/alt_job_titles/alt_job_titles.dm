@@ -76,3 +76,25 @@
 		"Endron Labourer"
 	)
 
+/datum/job/vamp/garou/amberglade/keeper
+	alt_titles = list(
+		"Burnt Tree Truthcatcher"
+	)
+/datum/job/vamp/garou/amberglade/guardian
+	alt_titles = list(
+		"Burnt Tree Warder"
+	)
+/datum/job/vamp/garou/paintedcity/keeper
+	alt_titles = list(
+		"Painted City Truthcatcher"
+	)
+
+/datum/job/vamp/garou/paintedcity/guardian
+	alt_titles = list(
+		"Painted City Warder"
+	)
+
+/datum/job/vamp/triad_soldier
+	alt_titles = list(
+		"Triad Contractor"
+	)

@@ -44,7 +44,7 @@
 
 	level = 2
 	check_flags = DISC_CHECK_CONSCIOUS | DISC_CHECK_CAPABLE | DISC_CHECK_LYING | DISC_CHECK_IMMOBILE
-	target_type = TARGET_MOB | TARGET_TURF | TARGET_OBJ
+	target_type = TARGET_MOB
 	range = 7
 
 	aggravating = TRUE
