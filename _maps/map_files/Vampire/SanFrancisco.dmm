@@ -1085,11 +1085,10 @@
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/sewer/nosferatu_town)
 "ant" = (
-/obj/structure/flora/ausbushes/sparsegrass{
-	icon_state = "lavendergrass_3"
-	},
-/turf/open/floor/plating/vampgrass,
-/area/vtm/interior/mansion)
+/obj/item/trash/plate,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/vampwood,
+/area/vtm/forest)
 "anu" = (
 /obj/effect/decal/bordur{
 	dir = 8
@@ -2886,6 +2885,15 @@
 	},
 /turf/open/floor/plating/parquetry,
 /area/vtm/interior/millennium_tower/f4)
+"aJW" = (
+/obj/structure/vampdoor/old{
+	lock_id = "triad";
+	lockpick_difficulty = 16;
+	locked = 1;
+	dir = 4
+	},
+/turf/open/floor/plating/parquetry/old,
+/area/vtm/interior)
 "aKi" = (
 /obj/structure/vampdoor/npc{
 	dir = 8
@@ -3831,6 +3839,12 @@
 /obj/structure/closet/crate/bin,
 /turf/open/floor/plating/concrete,
 /area/vtm/interior/shop)
+"aVy" = (
+/obj/structure/vampdoor/npc{
+	dir = 8
+	},
+/turf/open/floor/plating/vampwood,
+/area/vtm/forest)
 "aVz" = (
 /obj/machinery/light/small{
 	dir = 4;
@@ -4999,12 +5013,9 @@
 /turf/open/floor/plating/parquetry,
 /area/vtm/interior/laundromat)
 "blH" = (
-/obj/structure/safe/floor{
-	pixel_y = 28;
-	color = "#8f7e74"
-	},
-/turf/open/floor/plating/parquetry/old,
-/area/vtm/interior)
+/obj/structure/fireplace,
+/turf/open/floor/plating/vampwood,
+/area/vtm/forest)
 "blL" = (
 /obj/structure/table/wood,
 /obj/item/candle,
@@ -6520,10 +6531,6 @@
 /obj/item/reagent_containers/food/drinks/coffee/vampire/robust{
 	pixel_y = 7;
 	pixel_x = 11
-	},
-/obj/machinery/recharger{
-	pixel_x = -6;
-	pixel_y = 10
 	},
 /turf/open/floor/plating/parquetry/old,
 /area/vtm/interior/police)
@@ -10808,6 +10815,12 @@
 	},
 /turf/open/floor/plating/parquetry/old,
 /area/vtm/clinic/haven)
+"cJf" = (
+/obj/transfer_point_vamp{
+	id = 77
+	},
+/turf/open/floor/plating/vampdirt,
+/area/vtm)
 "cJk" = (
 /obj/structure/roadblock{
 	dir = 1
@@ -15884,15 +15897,8 @@
 /turf/open/floor/plating/parquetry/old,
 /area/vtm/interior/police)
 "eaU" = (
-/obj/effect/decal/bordur{
-	dir = 8
-	},
-/obj/machinery/light{
-	dir = 8;
-	bulb_colour = "#c892ec"
-	},
-/turf/open/floor/plating/asphalt,
-/area/vtm/pacificheights/forest)
+/turf/closed/wall/vampwall/dirtywood,
+/area/vtm/forest)
 "eaW" = (
 /obj/machinery/light/small{
 	dir = 4;
@@ -18114,10 +18120,8 @@
 /turf/open/floor/carpet/red,
 /area/vtm/jazzclub)
 "eGm" = (
-/obj/matrix{
-	alpha = 0
-	},
-/turf/closed/wall/vampwall/rock,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating/parquetry/old,
 /area/vtm/forest)
 "eGn" = (
 /obj/structure/chair{
@@ -18243,6 +18247,11 @@
 	},
 /turf/open/floor/plating/asphalt,
 /area/vtm/interior/endron_facility)
+"eIw" = (
+/obj/item/trash/plate,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating/vampwood,
+/area/vtm/forest)
 "eIB" = (
 /obj/effect/decal/bordur{
 	dir = 1
@@ -18888,6 +18897,16 @@
 /obj/structure/closet/cabinet,
 /turf/open/floor/plating/parquetry/old,
 /area/vtm/interior/laundromat)
+"eQN" = (
+/obj/effect/decal/bordur{
+	dir = 8
+	},
+/obj/machinery/light{
+	dir = 8;
+	light_color = "#6488EA"
+	},
+/turf/open/floor/plating/asphalt,
+/area/vtm/pacificheights/forest)
 "eQU" = (
 /obj/american_flag{
 	pixel_y = 32
@@ -22127,13 +22146,12 @@
 /turf/closed/wall/vampwall/old/low/window,
 /area/vtm/interior/tzimisce_manor)
 "fGk" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 8
+/obj/effect/decal/wallpaper/stone,
+/obj/machinery/light/small/red{
+	alpha = 0;
+	plane = -16
 	},
-/obj/structure/curtain/cloth/fancy{
-	color = "#828282"
-	},
-/turf/open/floor/plating/parquetry/old,
+/turf/closed/wall/vampwall,
 /area/vtm/interior)
 "fGm" = (
 /turf/open/floor/plating/sidewalk/old,
@@ -25145,6 +25163,7 @@
 "gts" = (
 /obj/structure/closet/cardboard,
 /obj/item/stack/sheet/mineral/wood/fifty,
+/obj/item/lighter,
 /turf/open/floor/plating/parquetry/old,
 /area/vtm/forest)
 "gtt" = (
@@ -26095,13 +26114,10 @@
 /turf/open/floor/plating/vampgrass,
 /area/vtm/graveyard)
 "gEX" = (
-/obj/matrix{
-	alpha = 0
+/obj/transfer_point_vamp{
+	id = 78
 	},
-/obj/matrix{
-	alpha = 0
-	},
-/turf/open/space/basic,
+/turf/open/floor/plating/vampdirt,
 /area/vtm/forest)
 "gEZ" = (
 /obj/structure/fluff/hedge,
@@ -31308,6 +31324,10 @@
 /obj/structure/clothinghanger,
 /turf/open/floor/plating/vampplating/mono,
 /area/vtm/interior/strip/elysium)
+"iaz" = (
+/obj/effect/landmark/start/garou/glade/keeper,
+/turf/open/floor/plating/vampdirt,
+/area/vtm/forest)
 "iaB" = (
 /turf/closed/wall/vampwall,
 /area/vtm/forest)
@@ -32113,13 +32133,11 @@
 /turf/open/floor/plating/vampplating/mono,
 /area/vtm/clinic)
 "ilU" = (
-/obj/structure/flora/rock/pile/largejungle{
-	icon_state = "bush3";
-	pixel_x = -23;
-	pixel_y = 17
+/obj/transfer_point_vamp{
+	id = 78
 	},
-/turf/open/floor/plating/vampgrass,
-/area/vtm/interior)
+/turf/open/floor/plating/vampdirt,
+/area/vtm)
 "ilX" = (
 /obj/effect/decal/trash{
 	icon_state = "trash7"
@@ -32902,6 +32920,10 @@
 	},
 /turf/open/floor/plating/vampdirt,
 /area/vtm/forest)
+"ixE" = (
+/obj/effect/landmark/start/garou/glade/keeper,
+/turf/open/floor/plating/rough/cave,
+/area/vtm/forest)
 "ixM" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/floor/plating/vampgrass,
@@ -33278,9 +33300,13 @@
 /turf/open/floor/plating/sidewalk,
 /area/vtm/unionsquare)
 "iCx" = (
-/obj/structure/bed/maint,
-/turf/open/floor/plating/concrete,
-/area/vtm/interior)
+/obj/machinery/light/small{
+	dir = 4;
+	pixel_x = -16
+	},
+/obj/structure/closet/cabinet,
+/turf/open/floor/plating/parquetry/old,
+/area/vtm/forest)
 "iCD" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
@@ -34633,6 +34659,16 @@
 	icon_state = "fleshwall"
 	},
 /area/vtm/sewer/tzimisce_sanctum)
+"iUC" = (
+/obj/item/flashlight/lantern{
+	light_color = "#013220";
+	pixel_y = 8
+	},
+/obj/machinery/light/small{
+	pixel_y = 32
+	},
+/turf/open/floor/plating/parquetry/old,
+/area/vtm/forest)
 "iUE" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
@@ -35647,6 +35683,12 @@
 	},
 /turf/open/floor/plating/toilet,
 /area/vtm/hotel)
+"jiO" = (
+/obj/transfer_point_vamp{
+	id = 65
+	},
+/turf/open/floor/plating/vampgrass,
+/area/vtm/forest)
 "jja" = (
 /obj/effect/landmark/npcbeacon,
 /obj/effect/landmark/npcactivity,
@@ -36654,6 +36696,11 @@
 	},
 /turf/open/floor/carpet/purple,
 /area/vtm/jazzclub)
+"juE" = (
+/obj/structure/flora/ausbushes/fernybush,
+/obj/structure/flora/ausbushes,
+/turf/open/floor/plating/vampgrass,
+/area/vtm/interior)
 "juU" = (
 /obj/structure/curtain/cloth,
 /obj/effect/turf_decal/siding/white,
@@ -37804,12 +37851,14 @@
 /turf/open/floor/plating/vampgrass,
 /area/vtm/pacificheights/forest)
 "jLB" = (
-/obj/machinery/light/small/blacklight{
-	pixel_y = 4;
-	dir = 4;
-	pixel_x = -18
+/obj/structure/trad{
+	pixel_y = 32
 	},
-/turf/open/floor/plating/toilet,
+/obj/machinery/light/small{
+	dir = 4;
+	pixel_x = -16
+	},
+/turf/open/floor/plating/parquetry/old,
 /area/vtm/interior)
 "jLF" = (
 /obj/effect/decal/bordur{
@@ -38195,10 +38244,6 @@
 /obj/item/flashlight/seclite,
 /obj/item/flashlight/seclite,
 /obj/item/flashlight/seclite,
-/obj/machinery/recharger{
-	pixel_y = 10;
-	pixel_x = 11
-	},
 /turf/open/floor/plating/toilet,
 /area/vtm/interior/police/upstairs)
 "jQw" = (
@@ -40413,6 +40458,11 @@
 /obj/effect/decal/cleanable/glass,
 /turf/open/floor/plating/rough/cave,
 /area/vtm/sewer)
+"kvf" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/mouse,
+/turf/open/floor/plating/parquetry/old,
+/area/vtm/forest)
 "kvk" = (
 /obj/structure/lamppost/one{
 	dir = 1
@@ -43627,9 +43677,10 @@
 /turf/open/floor/plating/parquetry,
 /area/vtm/interior/strip/elysium)
 "lnH" = (
-/obj/item/vampirebook/industrialsociety,
-/turf/open/floor/plating/parquetry/old,
-/area/vtm/interior)
+/obj/structure/table,
+/obj/item/camera/spooky,
+/turf/open/floor/plating/rough,
+/area/vtm/interior/mansion)
 "lnX" = (
 /obj/structure/table/wood,
 /obj/item/kitchen/fork,
@@ -43657,8 +43708,10 @@
 /turf/open/floor/carpet/royalblack,
 /area/vtm/interior/millennium_tower/f4)
 "loz" = (
-/obj/structure/table/wood,
-/obj/structure/spirit_board,
+/obj/structure/chair/sofa/left{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/parquetry/old,
 /area/vtm/forest)
 "loB" = (
@@ -46814,8 +46867,8 @@
 /turf/open/floor/plating/rough,
 /area/vtm/anarch/basement)
 "meI" = (
-/obj/machinery/light/small,
-/turf/closed/wall/vampwall/wood,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/parquetry/old,
 /area/vtm/forest)
 "meJ" = (
 /obj/structure/chair/sofa/corp/left,
@@ -47314,6 +47367,12 @@
 	},
 /turf/open/floor/plating/vampgrass,
 /area/vtm/pacificheights/forest)
+"mmq" = (
+/obj/transfer_point_vamp{
+	id = 66
+	},
+/turf/open/floor/plating/vampdirt,
+/area/vtm)
 "mms" = (
 /obj/structure/roadblock{
 	dir = 4
@@ -49640,6 +49699,7 @@
 /obj/effect/turf_decal/weather/dirt,
 /obj/item/food/meat/rawcutlet/plain/human,
 /obj/structure/stone_tile/slab/burnt,
+/obj/structure/stone_tile/surrounding/burnt,
 /turf/open/floor/plating/vampgrass,
 /area/vtm/forest)
 "mPy" = (
@@ -54067,9 +54127,9 @@
 /turf/open/floor/plating/granite/black,
 /area/vtm/interior/museum)
 "nTa" = (
-/obj/structure/flora/ausbushes/fullgrass,
-/obj/structure/vamptree/pine,
-/turf/open/floor/plating/vampgrass,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating/vampwood,
 /area/vtm/forest)
 "nTe" = (
 /obj/structure/chair/wood{
@@ -54710,6 +54770,11 @@
 	},
 /turf/open/floor/plating/vampplating,
 /area/vtm/interior/millennium_tower)
+"ocJ" = (
+/obj/structure/bed/maint,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating/vampwood,
+/area/vtm/forest)
 "ocM" = (
 /obj/effect/turf_decal/siding/wideplating/dark,
 /obj/structure/fluff/hedge,
@@ -54942,12 +55007,9 @@
 /turf/open/floor/plating/toilet,
 /area/vtm/interior/cog/caern)
 "ogE" = (
-/obj/effect/decal/pallet,
-/obj/item/lighter,
-/obj/machinery/light/small{
-	pixel_y = -18;
-	dir = 1
-	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/vampirebook/industrialsociety,
+/obj/item/trash/vampirecrisps,
 /turf/open/floor/plating/parquetry/old,
 /area/vtm/forest)
 "ogO" = (
@@ -57205,14 +57267,10 @@
 /turf/open/floor/plating/sidewalk/old,
 /area/vtm/interior/tzimisce_manor)
 "oJQ" = (
-/obj/structure/vampdoor/old{
-	lock_id = "triad";
-	lockpick_difficulty = 16;
-	locked = 1;
-	dir = 4
-	},
-/turf/open/floor/plating/concrete,
-/area/vtm/interior)
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating/parquetry/old,
+/area/vtm/forest)
 "oJZ" = (
 /obj/machinery/light/small{
 	dir = 8;
@@ -59320,6 +59378,12 @@
 	color = "#636363"
 	},
 /area/vtm/interior/endron_facility)
+"pme" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/mouse,
+/turf/open/floor/plating/vampwood,
+/area/vtm/forest)
 "pmo" = (
 /obj/effect/turf_decal/siding/white,
 /obj/effect/turf_decal/siding/white{
@@ -60281,6 +60345,10 @@
 /obj/item/bedsheet/random,
 /turf/open/floor/plating/parquetry/old,
 /area/vtm/interior)
+"pyj" = (
+/obj/effect/landmark/start/garou/glade/keeper,
+/turf/open/floor/plating/vampgrass,
+/area/vtm/forest)
 "pyr" = (
 /obj/structure/window/reinforced/indestructable{
 	alpha = 0;
@@ -60337,6 +60405,16 @@
 	},
 /turf/open/floor/plating/parquetry/rich,
 /area/vtm/interior/tzimisce_manor)
+"pyT" = (
+/obj/effect/decal/bordur{
+	dir = 4
+	},
+/obj/machinery/light{
+	dir = 4;
+	bulb_colour = "#c892ec"
+	},
+/turf/open/floor/plating/asphalt,
+/area/vtm/pacificheights/forest)
 "pzc" = (
 /obj/structure/table/wood,
 /obj/machinery/light/small{
@@ -65762,6 +65840,11 @@
 /obj/structure/railing,
 /turf/open/openspace,
 /area/vtm/anarch)
+"qQe" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/ghost/hostile,
+/turf/open/floor/plating/parquetry/old,
+/area/vtm/forest)
 "qQf" = (
 /obj/item/kirbyplants/random,
 /obj/effect/turf_decal/weather/dirt{
@@ -65807,6 +65890,10 @@
 /obj/structure/roadsign/speedlimit25,
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/pacificheights)
+"qQQ" = (
+/obj/structure/vampdoor/wood,
+/turf/open/floor/plating/parquetry/old,
+/area/vtm/forest)
 "qQX" = (
 /obj/structure/window/reinforced/indestructable{
 	alpha = 0
@@ -66996,6 +67083,12 @@
 /obj/structure/chair/sofa/corp/left,
 /turf/open/floor/carpet/black,
 /area/vtm/interior/bianchiBank)
+"rdL" = (
+/obj/transfer_point_vamp{
+	id = 65
+	},
+/turf/open/floor/plating/vampdirt,
+/area/vtm)
 "rdR" = (
 /obj/structure/stalagmite,
 /turf/open/floor/plating/rough/cave,
@@ -68641,6 +68734,12 @@
 /obj/structure/trashcan,
 /turf/open/floor/plating/sidewalk,
 /area/vtm/pacificheights)
+"rxl" = (
+/obj/effect/decal/carpet{
+	pixel_y = -13
+	},
+/turf/open/floor/plating/parquetry/old,
+/area/vtm/forest)
 "rxm" = (
 /obj/structure/railing,
 /obj/structure/lattice,
@@ -72062,7 +72161,8 @@
 /turf/open/floor/plating/parquetry/old,
 /area/vtm/interior/chantry)
 "spo" = (
-/turf/closed/wall/vampwall/rich/old,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating/vampwood,
 /area/vtm/forest)
 "spr" = (
 /obj/effect/decal/bordur{
@@ -72986,11 +73086,8 @@
 /turf/open/openspace,
 /area/vtm/interior/millennium_tower/f2)
 "sAZ" = (
-/obj/item/flashlight/lantern{
-	light_color = "#013220";
-	pixel_y = 8
-	},
-/turf/open/floor/plating/parquetry/old,
+/mob/living/simple_animal/deer,
+/turf/open/floor/plating/vampdirt,
 /area/vtm/forest)
 "sBf" = (
 /obj/effect/decal/bordur{
@@ -74075,6 +74172,15 @@
 /obj/effect/landmark/start/hound,
 /turf/open/floor/plating/parquetry/rich,
 /area/vtm/interior/millennium_tower/f3)
+"sSG" = (
+/obj/structure/bed/maint,
+/obj/machinery/light/small{
+	dir = 4;
+	light_power = 0.5;
+	pixel_x = -16
+	},
+/turf/open/floor/plating/concrete,
+/area/vtm/interior)
 "sSL" = (
 /obj/effect/decal/bordur{
 	dir = 4
@@ -74205,6 +74311,11 @@
 	},
 /turf/open/floor/plating/vampgrass,
 /area/vtm/pacificheights/forest)
+"sUm" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating/parquetry/old,
+/area/vtm/forest)
 "sUn" = (
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/structure/flora/ausbushes/brflowers,
@@ -75846,6 +75957,12 @@
 	},
 /turf/open/floor/plating/parquetry/old,
 /area/vtm/interior/chantry)
+"tqu" = (
+/obj/machinery/light/small{
+	pixel_y = 32
+	},
+/turf/open/floor/plating/parquetry/old,
+/area/vtm/forest)
 "tqw" = (
 /obj/structure/table,
 /obj/item/paper{
@@ -75909,11 +76026,10 @@
 /turf/open/floor/plating/vampcarpet,
 /area/vtm/interior/bianchiBank)
 "trb" = (
-/obj/transfer_point_vamp{
-	id = 77
-	},
-/turf/open/floor/plating/vampdirt,
-/area/vtm/pacificheights/forest)
+/obj/item/trash/semki,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/vampwood,
+/area/vtm/forest)
 "trc" = (
 /obj/effect/decal/bordur{
 	dir = 5
@@ -77121,6 +77237,11 @@
 	},
 /turf/open/floor/plating/vampplating/mono,
 /area/vtm/clinic/haven)
+"tGG" = (
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/ghost/hostile,
+/turf/open/floor/plating/vampwood,
+/area/vtm/forest)
 "tGI" = (
 /obj/structure/vampdoor/reinf{
 	lock_id = "primNosferatu";
@@ -77867,9 +77988,13 @@
 /turf/open/floor/plating/vampplating/mono,
 /area/vtm/interior/millennium_tower/f4)
 "tRJ" = (
-/obj/structure/vamptree/pine,
-/turf/closed/wall/vampwall/rock,
-/area/vtm/forest)
+/obj/structure/vampdoor/prison{
+	lockpick_difficulty = 11;
+	lock_id = "triad";
+	pixel_y = -8
+	},
+/turf/open/floor/plating/concrete,
+/area/vtm/interior)
 "tRL" = (
 /obj/structure/trashbag{
 	pixel_y = 9
@@ -78193,6 +78318,22 @@
 /obj/effect/decal/cleanable/gasoline,
 /turf/open/floor/plating/rough,
 /area/vtm/interior/mansion)
+"tWu" = (
+/obj/structure/table,
+/obj/item/clothing/mask/gas/atmos{
+	name = "gas mask";
+	desc = "A high-grade gas mask that can be connected to an air supply."
+	},
+/obj/item/clothing/mask/gas/atmos{
+	name = "gas mask";
+	desc = "A high-grade gas mask that can be connected to an air supply."
+	},
+/obj/item/clothing/mask/gas/atmos{
+	name = "gas mask";
+	desc = "A high-grade gas mask that can be connected to an air supply."
+	},
+/turf/open/floor/plating/toilet,
+/area/vtm/interior)
 "tWC" = (
 /obj/structure/closet/crate/coffin,
 /turf/open/floor/plating/toilet,
@@ -80236,6 +80377,12 @@
 /obj/effect/decal/trash,
 /turf/open/floor/plating/vampwood,
 /area/vtm/sewer/nosferatu_town)
+"uyg" = (
+/obj/structure/vampfence/rich{
+	dir = 4
+	},
+/turf/open/floor/plating/concrete,
+/area/vtm/interior)
 "uyr" = (
 /turf/closed/wall/vampwall/rich,
 /area/vtm/interior/millennium_tower/f4)
@@ -81545,6 +81692,11 @@
 /obj/effect/decal/cardboard,
 /turf/open/floor/plating/vampdirt,
 /area/vtm/graveyard)
+"uRA" = (
+/obj/structure/bed,
+/obj/item/bedsheet/brown,
+/turf/open/floor/plating/parquetry/old,
+/area/vtm/forest)
 "uRG" = (
 /obj/machinery/hydroponics/soil,
 /turf/open/floor/plating/vampdirt,
@@ -84204,11 +84356,9 @@
 /turf/open/space/basic,
 /area/space)
 "vAM" = (
-/obj/transfer_point_vamp{
-	id = 66
-	},
-/turf/open/floor/plating/vampdirt,
-/area/vtm/pacificheights/forest)
+/obj/effect/landmark/start/garou/glade/guardian,
+/turf/open/floor/plating/parquetry/old,
+/area/vtm/forest)
 "vAN" = (
 /turf/open/floor/carpet,
 /area/vtm/interior/strip/elysium)
@@ -85311,9 +85461,10 @@
 /turf/closed/wall/vampwall/rich,
 /area/vtm/interior/millennium_tower)
 "vOS" = (
-/obj/structure/flora/ausbushes/fullgrass,
-/turf/open/floor/plating/vampgrass,
-/area/vtm/interior/mansion)
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating/vampwood,
+/area/vtm/forest)
 "vOV" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
@@ -88937,7 +89088,6 @@
 	color = "#636363"
 	},
 /obj/structure/table,
-/obj/machinery/recharger,
 /turf/closed/wall/vampwall/market/low,
 /area/vtm/interior/police/upstairs)
 "wLS" = (
@@ -90629,14 +90779,11 @@
 /turf/open/floor/plating/asphalt,
 /area/vtm/pacificheights)
 "xjS" = (
-/obj/effect/decal/bordur{
-	dir = 4
+/obj/matrix{
+	alpha = 0
 	},
-/obj/machinery/light{
-	dir = 4
-	},
-/turf/open/floor/plating/asphalt,
-/area/vtm/pacificheights/forest)
+/turf/open/space/basic,
+/area/vtm/interior)
 "xjU" = (
 /obj/machinery/light{
 	pixel_y = 32
@@ -134392,17 +134539,17 @@ jcc
 nYS
 nYS
 nYS
-tiZ
-dhc
-dhc
-dhc
-dhc
-dhc
-dhc
-dhc
-dhc
-dhc
-dhc
+kCt
+nYS
+nYS
+nYS
+nYS
+nYS
+nYS
+nYS
+nYS
+nYS
+nYS
 dhc
 dhc
 dhc
@@ -134649,16 +134796,16 @@ jcc
 jcc
 jcc
 jcc
-tiZ
-nYS
-nYS
-nYS
-nYS
-nYS
-nYS
-nYS
-nYS
-nYS
+jcc
+jcc
+jcc
+jcc
+jcc
+jcc
+jcc
+jcc
+jcc
+jcc
 nYS
 nYS
 nYS
@@ -134905,16 +135052,16 @@ lMe
 lMe
 lMe
 lMe
-jcc
-jcc
-jcc
-jcc
-jcc
-jcc
-jcc
-jcc
-jcc
-jcc
+dKC
+lMe
+lMe
+lMe
+lMe
+lMe
+lMe
+lMe
+lMe
+lMe
 jcc
 jcc
 jcc
@@ -135152,7 +135299,7 @@ dhc
 dhc
 dhc
 dhc
-nYS
+dhc
 nYS
 nYS
 nYS
@@ -135162,18 +135309,18 @@ lMe
 lMe
 lMe
 lMe
+jcc
+jcc
+jcc
+jcc
+jcc
+jcc
+jcc
+jcc
+jcc
+lMe
+lMe
 dKC
-lMe
-lMe
-lMe
-lMe
-lMe
-lMe
-lMe
-lMe
-lMe
-jcc
-jcc
 lMe
 lMe
 lMe
@@ -135410,7 +135557,7 @@ tiZ
 nYS
 nYS
 nYS
-jcc
+nYS
 jcc
 jcc
 jcc
@@ -135418,19 +135565,19 @@ jcc
 jcc
 gqV
 lMe
-lMe
+jcc
+jcc
+nYS
+nYS
+nYS
+nYS
+nYS
+nYS
+nYS
 jcc
 jcc
 jcc
 jcc
-jcc
-jcc
-jcc
-jcc
-jcc
-lMe
-lMe
-dKC
 lMe
 aEO
 lMe
@@ -135676,7 +135823,6 @@ jcc
 jcc
 rPb
 jcc
-jcc
 nYS
 nYS
 nYS
@@ -135684,13 +135830,14 @@ nYS
 nYS
 nYS
 nYS
-jcc
-jcc
-jcc
+nYS
+nYS
+nYS
+nYS
 jcc
 lMe
-mFC
-qRF
+gqV
+lMe
 jcc
 nYS
 wTq
@@ -135930,7 +136077,7 @@ tnn
 maV
 iHq
 jcc
-cIR
+jLB
 iHq
 jcc
 jcc
@@ -135941,8 +136088,8 @@ jcc
 jcc
 jcc
 jcc
-jcc
 nYS
+dhc
 nYS
 jcc
 jcc
@@ -136195,11 +136342,11 @@ mvz
 ojP
 mNX
 jcc
-jcc
 gMZ
-iCx
+sSG
 jcc
 nYS
+dhc
 nYS
 nYS
 nYS
@@ -136451,12 +136598,12 @@ lMe
 lMe
 lMe
 lMe
-lMe
-ygw
+uyg
 tsW
 xgh
 jcc
 nYS
+dhc
 dhc
 dhc
 dhc
@@ -136708,12 +136855,12 @@ lMe
 lMe
 fTH
 lMe
-lMe
-vtz
+tRJ
 xgh
 xUa
 jcc
 nYS
+dhc
 dhc
 dhc
 dhc
@@ -136950,8 +137097,8 @@ dhc
 dhc
 nYS
 ucq
+juE
 mMV
-ilU
 toA
 bAb
 sFf
@@ -136965,12 +137112,12 @@ gGf
 lMe
 iSW
 lMe
-lMe
-ygw
+uyg
 oeu
 xgh
 jcc
 nYS
+dhc
 dhc
 dhc
 dhc
@@ -137211,7 +137358,7 @@ jcc
 jcc
 jcc
 toA
-blH
+iHq
 iHq
 iHq
 jcc
@@ -137226,8 +137373,8 @@ jcc
 jcc
 jcc
 jcc
-jcc
 nYS
+dhc
 dhc
 dhc
 dhc
@@ -137455,18 +137602,18 @@ skY
 wTq
 nYS
 dhc
-tiZ
+dhc
+dhc
+dhc
+dhc
+dhc
+dhc
 nYS
 nYS
 nYS
 nYS
 nYS
 nYS
-nYS
-nYS
-nYS
-nYS
-jcc
 jcc
 pjp
 pjp
@@ -137483,8 +137630,8 @@ jcc
 nYS
 nYS
 nYS
-nYS
 tiZ
+dhc
 dhc
 dhc
 dhc
@@ -137713,18 +137860,18 @@ wTq
 nYS
 dhc
 tiZ
-jcc
-jcc
-jcc
-jcc
-jcc
+nYS
+nYS
+nYS
+nYS
+nYS
+nYS
 jcc
 jcc
 jcc
 jcc
 jcc
 ucq
-mNX
 lMe
 lMe
 lMe
@@ -137971,17 +138118,17 @@ nYS
 dhc
 nYS
 jcc
-fAE
-lMe
-xnx
-lMe
-lMe
-unU
+jcc
+jcc
+jcc
+jcc
+jcc
+jcc
 xgh
 xgh
 sbr
-ucq
-lMe
+fGk
+iZK
 lMe
 uPS
 rkQ
@@ -138230,10 +138377,10 @@ nYS
 jcc
 fAE
 lMe
+xnx
 lMe
 lMe
-lMe
-ieh
+unU
 xgh
 xgh
 xgh
@@ -138487,13 +138634,13 @@ nYS
 jcc
 fAE
 lMe
-keW
 lMe
 lMe
-unU
+lMe
+ieh
 xgh
 xgh
-xgh
+gTN
 ucq
 iZK
 aNt
@@ -138742,15 +138889,15 @@ nYS
 dhc
 nYS
 jcc
-jcc
-jcc
-jcc
-jcc
-jcc
-jcc
+fAE
+lMe
+keW
+lMe
+lMe
+unU
 xgh
 xgh
-gTN
+xgh
 abt
 lMe
 aNt
@@ -138998,15 +139145,15 @@ wTq
 nYS
 dhc
 tiZ
-nYS
-tiZ
 jcc
-lfp
+jcc
+jcc
+jcc
+jcc
+jcc
+jcc
 xgh
-xgh
-ygw
-xgh
-xgh
+tsW
 xgh
 ucq
 iZK
@@ -139258,12 +139405,12 @@ dhc
 dhc
 nYS
 jcc
-oLh
+lfp
 xgh
 xgh
-vtz
+ygw
 xgh
-tsW
+xgh
 ncr
 ucq
 iZK
@@ -139515,15 +139662,15 @@ dhc
 dhc
 nYS
 lDT
-ohk
-xgh
-iJk
-ygw
+oLh
 xgh
 xgh
-ncr
-ucq
-lMe
+vtz
+xgh
+xgh
+vfy
+fGk
+iZK
 lMe
 sTa
 sTa
@@ -139772,15 +139919,15 @@ dhc
 dhc
 nYS
 jcc
-ctZ
+ohk
 xgh
-nxy
+iJk
 ygw
 xgh
 xgh
-vfy
+jcc
+jcc
 ucq
-lMe
 lMe
 mFC
 lMe
@@ -139789,11 +139936,11 @@ lMe
 lMe
 lMe
 lMe
-uqu
+lMe
 jcc
 tiZ
 nYS
-dhc
+nYS
 dhc
 dhc
 dhc
@@ -140029,20 +140176,22 @@ dhc
 dhc
 nYS
 jcc
+ctZ
+xgh
+nxy
+ygw
+xgh
+xgh
+jcc
+xjS
+jcc
+xzq
+xzq
 jcc
 jcc
 jcc
 jcc
 jcc
-oJQ
-jcc
-jcc
-ucq
-lMe
-lMe
-lMe
-lMe
-lMe
 jcc
 jcc
 jcc
@@ -140050,8 +140199,6 @@ jcc
 jcc
 nYS
 nYS
-dhc
-dhc
 dhc
 dhc
 dhc
@@ -140286,29 +140433,29 @@ dhc
 dhc
 nYS
 jcc
-lbK
-aKj
 jcc
-eWi
-evg
+jcc
+jcc
+jcc
+jcc
+aJW
+jcc
+jcc
+jcc
 iHq
-cCC
-ihN
+iHq
 jcc
-fGk
-fGk
+nYS
 jcc
-jcc
-jcc
+nRc
+xgh
 jcc
 frv
+tWu
 frv
-jcc
 jcc
 jcc
 nYS
-dhc
-dhc
 dhc
 dhc
 dhc
@@ -140540,32 +140687,32 @@ wTq
 nYS
 dhc
 dhc
-dhc
+tiZ
 nYS
-aYE
-xgh
-xgh
-bTf
-iHq
-iHq
-iHq
-xLo
-grD
 jcc
-cIR
+lbK
+aKj
+jcc
+eWi
+evg
+iHq
+cCC
+ihN
+jcc
+iHq
 iHq
 jcc
-nRc
+nYS
+jcc
+xgh
 xgh
 hhi
 uQS
 uQS
-jLB
+uQS
 hQk
 jcc
 nYS
-dhc
-dhc
 dhc
 dhc
 dhc
@@ -140797,20 +140944,22 @@ wTq
 nYS
 dhc
 dhc
-tiZ
-tiZ
+nYS
+nYS
+aYE
+xgh
+xgh
+bTf
+iHq
+iHq
+iHq
+xLo
+grD
 jcc
-bvL
-jbA
-jcc
-ieL
-ehu
-iHq
-iHq
+cIR
 iHq
 jcc
-iHq
-iHq
+jcc
 jcc
 xgh
 xgh
@@ -140821,8 +140970,6 @@ uQS
 off
 jcc
 nYS
-dhc
-dhc
 dhc
 dhc
 dhc
@@ -141055,20 +141202,22 @@ nYS
 dhc
 dhc
 nYS
+tiZ
 jcc
-jcc
-jcc
-jcc
+bvL
+jbA
 jcc
 ieL
+ehu
 iHq
 iHq
 iHq
+jcc
 iHq
-qYI
-iHq
+tuz
 iHq
 uGP
+xgh
 xgh
 xgh
 hEr
@@ -141078,8 +141227,6 @@ uQS
 azS
 jcc
 nYS
-dhc
-dhc
 dhc
 dhc
 dhc
@@ -141313,18 +141460,20 @@ dhc
 dhc
 nYS
 jcc
-run
-dem
-dRy
 jcc
 jcc
-qiF
-rtl
+jcc
+jcc
+ieL
 iHq
-lth
-jcc
 iHq
-tuz
+iHq
+iHq
+qYI
+iHq
+iHq
+jcc
+jcc
 jcc
 gcR
 xgh
@@ -141335,8 +141484,6 @@ uQS
 vgk
 jcc
 nYS
-dhc
-dhc
 dhc
 dhc
 dhc
@@ -141570,18 +141717,20 @@ dhc
 dhc
 nYS
 jcc
-dRy
-lMe
-lMe
-lMe
+run
+dem
 dRy
 jcc
-wRr
-iHq
-eJC
 jcc
-cIR
+qiF
+rtl
 iHq
+lth
+jcc
+iHq
+iHq
+jcc
+nYS
 jcc
 dHJ
 xgh
@@ -141592,8 +141741,6 @@ aNI
 eBu
 jcc
 nYS
-dhc
-dhc
 dhc
 dhc
 dhc
@@ -141827,18 +141974,20 @@ dhc
 dhc
 nYS
 jcc
+dRy
 lMe
 lMe
 lMe
-uqu
 dRy
 jcc
-tsx
+wRr
 iHq
-wHD
+eJC
 jcc
+cIR
 iHq
-iHq
+jcc
+nYS
 jcc
 vlX
 rqR
@@ -141849,8 +141998,6 @@ jcc
 jcc
 jcc
 nYS
-dhc
-dhc
 dhc
 dhc
 dhc
@@ -142083,31 +142230,31 @@ nYS
 dhc
 dhc
 nYS
+jcc
+lMe
+lMe
+lMe
+uqu
+dRy
+jcc
+tsx
+iHq
+wHD
 qiF
-lMe
-lMe
-lMe
-lMe
-lMe
-jcc
-jcc
-jcc
-jcc
-jcc
 iHq
 iHq
 jcc
+nYS
 jcc
 jcc
 jcc
 jcc
+jcc
 nYS
 nYS
 nYS
 nYS
 nYS
-dhc
-dhc
 dhc
 dhc
 dhc
@@ -142340,27 +142487,27 @@ nYS
 dhc
 dhc
 nYS
+qiF
+lMe
+lMe
+lMe
+lMe
+lMe
 jcc
-lMe
-aEO
-lMe
-lMe
-lMe
-dKC
-lMe
-lMe
-lMe
-lXv
+jcc
+jcc
+jcc
+jcc
 iHq
 iHq
 jcc
+nYS
+tiZ
 tiZ
 nYS
 nYS
 nYS
 tiZ
-dhc
-dhc
 dhc
 dhc
 dhc
@@ -142596,20 +142743,20 @@ wTq
 nYS
 dhc
 dhc
-nYS
+dhc
 jcc
-cQg
 lMe
-mFC
-rVG
-jcc
-jcc
-jcc
-jcc
-jcc
-jcc
-jcc
-jcc
+aEO
+lMe
+lMe
+lMe
+dKC
+lMe
+lMe
+lMe
+lXv
+iHq
+iHq
 jcc
 nYS
 dhc
@@ -142855,19 +143002,19 @@ dhc
 dhc
 nYS
 jcc
+cQg
+lMe
+mFC
+rVG
+lMe
 jcc
 jcc
 jcc
 jcc
 jcc
-tiZ
-nYS
-nYS
-nYS
-nYS
-nYS
-nYS
-nYS
+iHq
+iHq
+jcc
 tiZ
 dhc
 dhc
@@ -143111,21 +143258,21 @@ nYS
 dhc
 dhc
 nYS
-nYS
-nYS
-nYS
-nYS
-nYS
-nYS
+jcc
+jcc
+jcc
+jcc
+jcc
+jcc
+jcc
 tiZ
-dhc
-dhc
-dhc
-dhc
-dhc
-dhc
-dhc
-dhc
+tiZ
+nYS
+jcc
+jcc
+jcc
+jcc
+nYS
 dhc
 dhc
 dhc
@@ -143372,7 +143519,7 @@ nYS
 nYS
 nYS
 nYS
-tiZ
+nYS
 nYS
 nYS
 nYS
@@ -176614,14 +176761,14 @@ atu
 cIf
 atu
 atu
+atu
+atu
 pcT
 dVp
 dVp
 dVp
 dVp
-dVp
-dVp
-qHD
+qGw
 "}
 (65,1,2) = {"
 qHD
@@ -176873,11 +177020,11 @@ gQZ
 gQZ
 gQZ
 gQZ
-eaU
 gQZ
 gQZ
-vAM
-dvN
+eQN
+gQZ
+ilU
 dvN
 "}
 (66,1,2) = {"
@@ -177133,8 +177280,8 @@ dEo
 dEo
 dEo
 dEo
-vAM
-dvN
+dEo
+rdL
 dvN
 "}
 (67,1,2) = {"
@@ -177390,8 +177537,8 @@ dEo
 dEo
 dEo
 dEo
-vAM
-dvN
+dEo
+mmq
 dvN
 "}
 (68,1,2) = {"
@@ -177644,11 +177791,11 @@ nhf
 nhf
 nhf
 nhf
-xjS
 nhf
 nhf
-trb
-dvN
+pyT
+nhf
+cJf
 dvN
 "}
 (69,1,2) = {"
@@ -177900,13 +178047,13 @@ atu
 atu
 atu
 atu
+atu
+atu
 dVp
 dVp
 dVp
 dVp
-dVp
-dVp
-qHD
+qGw
 "}
 (70,1,2) = {"
 qHD
@@ -186084,7 +186231,7 @@ atu
 xqJ
 ihN
 dFt
-lnH
+iHq
 dFt
 uYT
 atu
@@ -307687,11 +307834,11 @@ ntq
 ntq
 ntq
 ntq
-ntq
-ntq
-ntq
-ntq
-ntq
+dvN
+dvN
+dvN
+dvN
+dvN
 dvN
 ntq
 "}
@@ -307944,7 +308091,7 @@ ntq
 ntq
 ntq
 ntq
-ntq
+dvN
 ntq
 ntq
 ntq
@@ -308201,7 +308348,7 @@ ntq
 ntq
 ntq
 ntq
-ntq
+dvN
 ntq
 ntq
 ntq
@@ -308458,7 +308605,7 @@ ntq
 ntq
 ntq
 ntq
-ntq
+dvN
 ntq
 ntq
 ntq
@@ -308715,7 +308862,7 @@ ntq
 ntq
 ntq
 ntq
-ntq
+dvN
 ntq
 ntq
 ntq
@@ -308972,10 +309119,10 @@ ntq
 ntq
 ntq
 ntq
-ntq
-ntq
-ntq
-ntq
+dvN
+dvN
+dvN
+dvN
 dvN
 dvN
 ntq
@@ -490392,9 +490539,9 @@ dhc
 dhc
 dhc
 dhc
+dhc
 nYS
 nYS
-aPm
 aPm
 udP
 ewD
@@ -490650,7 +490797,7 @@ dhc
 dhc
 tiZ
 nYS
-gEX
+tiZ
 aPm
 aPm
 pZu
@@ -490905,7 +491052,7 @@ dhc
 dhc
 tiZ
 nYS
-gEX
+tiZ
 aPm
 aPm
 aPm
@@ -491160,7 +491307,7 @@ dhc
 dhc
 dhc
 dhc
-fnO
+nYS
 aPm
 aPm
 aPm
@@ -491177,7 +491324,7 @@ msl
 ewD
 ewD
 ewD
-tRJ
+gOl
 aPm
 nYS
 nYS
@@ -491417,7 +491564,7 @@ dhc
 dhc
 dhc
 dhc
-fnO
+nYS
 aPm
 ewD
 gOl
@@ -491674,7 +491821,7 @@ dhc
 dhc
 dhc
 dhc
-fnO
+nYS
 aPm
 ewD
 eTt
@@ -491931,7 +492078,7 @@ dhc
 dhc
 dhc
 dhc
-fnO
+nYS
 aPm
 eTt
 koa
@@ -492174,8 +492321,8 @@ pgf
 pgf
 pgf
 pgf
-pgf
 aPm
+kCt
 nYS
 dhc
 dhc
@@ -492188,7 +492335,7 @@ dhc
 dhc
 dhc
 dhc
-fnO
+nYS
 aPm
 lSY
 koa
@@ -492430,22 +492577,22 @@ pgf
 cjo
 pgf
 pgf
-pgf
-pgf
 aPm
+aPm
+kCt
+dhc
+dhc
+dhc
+dhc
+dhc
+dhc
+dhc
+dhc
+dhc
+dhc
+dhc
+dhc
 nYS
-dhc
-dhc
-dhc
-dhc
-dhc
-dhc
-dhc
-dhc
-dhc
-dhc
-dhc
-fnO
 aPm
 cjV
 koa
@@ -492688,21 +492835,21 @@ pgf
 pgf
 pgf
 aPm
-aPm
-aPm
+kCt
+kCt
+dhc
+dhc
+dhc
+dhc
+dhc
+dhc
+dhc
+dhc
+dhc
+dhc
+dhc
+dhc
 nYS
-dhc
-dhc
-dhc
-dhc
-dhc
-dhc
-dhc
-dhc
-dhc
-dhc
-dhc
-fnO
 aPm
 ewD
 wYc
@@ -492959,7 +493106,7 @@ dhc
 dhc
 dhc
 dhc
-fnO
+nYS
 aPm
 ewD
 vgB
@@ -493216,9 +493363,9 @@ dhc
 dhc
 dhc
 dhc
-fnO
+nYS
 aPm
-aPm
+ewD
 ewD
 ewD
 ewD
@@ -493234,7 +493381,7 @@ myI
 xoX
 vKl
 aPm
-aPm
+pgf
 pgf
 pgf
 lES
@@ -493473,7 +493620,7 @@ dhc
 dhc
 dhc
 dhc
-fnO
+nYS
 aPm
 aPm
 aPm
@@ -493733,7 +493880,7 @@ nYS
 nYS
 tiZ
 nYS
-aPm
+nYS
 aPm
 aPm
 aPm
@@ -493748,8 +493895,8 @@ gXT
 aPm
 aPm
 aPm
+fnO
 aPm
-pgf
 pgf
 pgf
 aPm
@@ -493991,7 +494138,7 @@ aPm
 aPm
 aPm
 aPm
-xmp
+aPm
 ewD
 ewD
 gjT
@@ -494005,8 +494152,8 @@ gXT
 aPm
 fnO
 fnO
+fnO
 aPm
-pgf
 pgf
 pgf
 pgf
@@ -494235,13 +494382,13 @@ pgf
 aPm
 aPm
 nYS
-nYS
-aPm
-aPm
-aPm
-aPm
-aPm
 tiZ
+tiZ
+tiZ
+tiZ
+tiZ
+nYS
+nYS
 nYS
 aPm
 aPm
@@ -494262,8 +494409,8 @@ gXT
 aPm
 aPm
 aPm
+fnO
 aPm
-pgf
 pgf
 pgf
 pgf
@@ -494493,18 +494640,18 @@ koa
 aPm
 aPm
 nYS
-aPm
+nYS
 xmp
 xmp
 xmp
-aPm
+nYS
 nYS
 aPm
 aPm
 koa
 koa
 koa
-koa
+iaz
 xmp
 ewD
 ewD
@@ -494754,7 +494901,7 @@ aPm
 xmp
 vwO
 xmp
-aPm
+nYS
 nYS
 aPm
 koa
@@ -495295,7 +495442,7 @@ pgf
 pgf
 arw
 aPm
-aPm
+pgf
 pgf
 pgf
 aPm
@@ -495551,9 +495698,9 @@ pgf
 pgf
 pgf
 xmp
-xmp
 aPm
-pgf
+aPm
+aXZ
 pgf
 pgf
 aPm
@@ -495805,7 +495952,7 @@ koa
 koa
 nrH
 pgf
-pgf
+ixE
 iWM
 xmp
 pgf
@@ -496331,7 +496478,7 @@ aPm
 pgf
 pgf
 pgf
-aXZ
+pgf
 aPm
 nYS
 nYS
@@ -496762,7 +496909,7 @@ aPm
 aPm
 ewD
 ewD
-gOl
+ewD
 ewD
 ewD
 ewD
@@ -497091,7 +497238,7 @@ ewD
 ewD
 skx
 ewD
-ewD
+pyj
 mHa
 ewD
 uRG
@@ -498043,7 +498190,7 @@ mIV
 aPm
 ewD
 ewD
-gOl
+ewD
 ewD
 ewD
 ewD
@@ -498124,7 +498271,7 @@ xgv
 bzM
 aPm
 aPm
-pgf
+aPm
 pgf
 pgf
 aPm
@@ -498322,7 +498469,7 @@ jSr
 koa
 koa
 ewD
-gOl
+ewD
 ece
 ewD
 ewD
@@ -498377,10 +498524,10 @@ ewD
 ewD
 koa
 koa
+koa
 aPm
 aPm
-aPm
-aPm
+gNA
 aPm
 pgf
 pgf
@@ -498635,7 +498782,7 @@ ewD
 koa
 koa
 aPm
-pgf
+aPm
 gNA
 aXZ
 aPm
@@ -499066,13 +499213,13 @@ dhc
 mIV
 aPm
 aPm
-aPm
 ewD
 ewD
 ewD
 ewD
 ewD
-gOl
+ewD
+ewD
 ewD
 ewD
 ewD
@@ -499148,9 +499295,9 @@ xmp
 xmp
 xmp
 xmp
-xmp
-xmp
-xmp
+koa
+pgf
+pgf
 pgf
 pgf
 pgf
@@ -499322,7 +499469,7 @@ dhc
 dhc
 mIV
 aPm
-aPm
+ewD
 ewD
 ewD
 ewD
@@ -499388,7 +499535,7 @@ ewD
 xmp
 oWj
 sDZ
-sDZ
+vAM
 sDZ
 xWY
 ewD
@@ -499404,11 +499551,11 @@ xmp
 xmp
 gts
 jat
-sAZ
-sDZ
-sDZ
 xmp
-aPm
+xmp
+xmp
+xmp
+kfQ
 pgf
 pgf
 pgf
@@ -499579,7 +499726,7 @@ dhc
 dhc
 mIV
 aPm
-aPm
+ewD
 ewD
 ewD
 ewD
@@ -499658,15 +499805,15 @@ koa
 koa
 koa
 xmp
+iUC
 sDZ
 sDZ
-sDZ
-sDZ
-sDZ
-ogE
+xmp
+iCx
+hZR
 xmp
 aPm
-kfQ
+aPm
 pgf
 pgf
 pgf
@@ -499918,13 +500065,13 @@ xUs
 sDZ
 sDZ
 sDZ
+qQQ
+rxl
 sDZ
-sDZ
-loz
 xmp
+fnO
 aPm
 aPm
-pgf
 pgf
 pgf
 pgf
@@ -500156,7 +500303,7 @@ jSr
 koa
 koa
 ewD
-ewD
+skx
 ewD
 ewD
 ewD
@@ -500175,12 +500322,12 @@ wlZ
 sDZ
 sDZ
 sDZ
+xmp
 sDZ
-sDZ
-sDZ
+uRA
 xmp
 fnO
-aPm
+fnO
 aPm
 pgf
 rJx
@@ -500417,7 +500564,7 @@ ewD
 gWz
 iWl
 ewD
-ewD
+skx
 ewD
 ewD
 ewD
@@ -500432,12 +500579,12 @@ xWY
 hZR
 sDZ
 sDZ
-sDZ
-sDZ
-sDZ
+xmp
+xmp
+xmp
 xmp
 fnO
-fnO
+aPm
 aPm
 pgf
 rJx
@@ -500684,24 +500831,24 @@ ewD
 ewD
 ewD
 ewD
-ewD
+skx
 xWY
 oBO
 sDZ
 sDZ
 sDZ
-xmp
-xmp
+sDZ
 xmp
 fnO
+fnO
 aPm
-aPm
+pgf
 pgf
 pgf
 pgf
 aPm
 nYS
-dhc
+nYS
 dhc
 nYS
 "}
@@ -500957,8 +501104,8 @@ pgf
 pgf
 pgf
 aPm
+aPm
 nYS
-dhc
 dhc
 nYS
 "}
@@ -501150,7 +501297,7 @@ ewD
 ewD
 ewD
 ewD
-gOl
+ewD
 uaG
 nvU
 wNR
@@ -501197,7 +501344,7 @@ ewD
 ewD
 ewD
 ewD
-ewD
+skx
 ewD
 xmp
 jwy
@@ -501213,9 +501360,9 @@ jjx
 pgf
 pgf
 pgf
+pgf
 aPm
 nYS
-dhc
 dhc
 nYS
 "}
@@ -501399,7 +501546,7 @@ ewD
 ewD
 ewD
 ewD
-ewD
+gOl
 ewD
 ewD
 ewD
@@ -501451,13 +501598,13 @@ koa
 koa
 koa
 koa
+skx
 ewD
 ewD
 ewD
-ewD
-ewD
-meI
-sDZ
+skx
+xmp
+tqu
 sDZ
 ahd
 sDZ
@@ -501469,10 +501616,10 @@ aPm
 pgf
 pgf
 pgf
+pgf
 aXZ
 aPm
 nYS
-dhc
 dhc
 nYS
 "}
@@ -501724,12 +501871,12 @@ aPm
 aPm
 aPm
 aPm
-pgf
-pgf
+aPm
+aPm
+aPm
 aPm
 aPm
 nYS
-dhc
 dhc
 nYS
 "}
@@ -501926,7 +502073,7 @@ ewD
 wyd
 ewD
 ewD
-gOl
+ewD
 ewD
 mit
 ewD
@@ -501980,13 +502127,13 @@ xmp
 koa
 koa
 aPm
-aPm
-aPm
-aPm
+fnO
+fnO
+fnO
 aPm
 nYS
 nYS
-dhc
+nYS
 dhc
 nYS
 "}
@@ -502180,7 +502327,7 @@ ewD
 ewD
 ewD
 skx
-gOl
+ewD
 asE
 ewD
 ewD
@@ -502914,10 +503061,10 @@ dhc
 dhc
 dhc
 dhc
-mIV
+dhc
 mIV
 aPm
-koa
+aPm
 xcc
 gbl
 xcc
@@ -503172,9 +503319,9 @@ mIV
 mIV
 mIV
 mIV
-aPm
-aPm
-aPm
+mIV
+mIV
+mIV
 xcc
 gbl
 xcc
@@ -503429,9 +503576,9 @@ pxA
 pxA
 pxA
 pxA
-aPm
 mIV
-aPm
+mIV
+mIV
 xcc
 vHd
 xcc
@@ -503748,7 +503895,7 @@ ewD
 ewD
 ewD
 ewD
-gOl
+ewD
 ewD
 ewD
 ewD
@@ -504253,7 +504400,7 @@ ewD
 ewD
 ewD
 ewD
-gOl
+ewD
 ewD
 ewD
 ewD
@@ -504773,7 +504920,7 @@ ewD
 ewD
 ewD
 ewD
-gOl
+ewD
 ewD
 ewD
 ewD
@@ -505264,7 +505411,7 @@ ewD
 ewD
 ewD
 xXu
-gOl
+ewD
 ewD
 ewD
 ewD
@@ -505272,7 +505419,7 @@ ewD
 fpd
 xXu
 ewD
-gOl
+ewD
 ewD
 ewD
 ewD
@@ -506042,16 +506189,16 @@ ewD
 ewD
 ewD
 ewD
-uuz
-xXu
-ewD
-skx
-skx
-ewD
-ewD
-ewD
-ewD
-ewD
+eaU
+eaU
+eaU
+eaU
+eaU
+eaU
+eaU
+eaU
+eaU
+eaU
 ewD
 ewD
 ewD
@@ -506299,21 +506446,21 @@ ewD
 ewD
 ewD
 vgB
-ewD
-ewD
+eaU
+spo
+eGm
+ant
+tGG
+sDZ
+spo
+spo
+ocJ
+eaU
 ewD
 ewD
 ewD
 ewD
 gOl
-ewD
-ewD
-ewD
-ewD
-ewD
-ewD
-gOl
-ewD
 ewD
 ewD
 ewD
@@ -506556,16 +506703,16 @@ ewD
 ewD
 skx
 ewD
-ewD
-ewD
-gOl
-jmu
-ewD
-ewD
-ewD
-ewD
-ewD
-ewD
+eaU
+spo
+oJQ
+kvf
+vOS
+meI
+trb
+spo
+spo
+eaU
 ewD
 ewD
 ewD
@@ -506774,12 +506921,12 @@ koa
 hOZ
 hOZ
 hOZ
-hOZ
+ewD
 hOZ
 koa
 hOZ
 hOZ
-hOZ
+tOO
 hOZ
 koa
 koa
@@ -506813,16 +506960,16 @@ ewD
 ewD
 skx
 ewD
-jmu
-ewD
-ewD
-ewD
-ewD
-xXu
-xXu
-ewD
-ewD
-vgB
+eaU
+spo
+nTa
+eGm
+oJQ
+oJQ
+meI
+vOS
+spo
+eaU
 ewD
 vgB
 ewD
@@ -507067,23 +507214,23 @@ ewD
 ewD
 gOl
 jmu
+hth
+ewD
+ewD
+eaU
+blH
+qQe
+loz
+eGm
+nTa
+qQe
+sUm
+meI
+eaU
 ewD
 ewD
 ewD
-ghX
 ewD
-ewD
-ewD
-ewD
-ewD
-ewD
-ewD
-ewD
-ewD
-ewD
-gOl
-ewD
-gOl
 ewD
 ewD
 ewD
@@ -507290,7 +507437,7 @@ ewD
 ewD
 ewD
 ewD
-ewD
+tOO
 ewD
 ewD
 ewD
@@ -507327,16 +507474,16 @@ ewD
 ewD
 xXu
 xXu
-ewD
-uuz
-ewD
-ewD
-ewD
-ewD
-gOl
-ewD
-ewD
-ewD
+eaU
+oJQ
+oJQ
+ahd
+eGm
+oJQ
+eGm
+spo
+eaU
+eaU
 ewD
 ewD
 ewD
@@ -507550,7 +507697,7 @@ ewD
 ewD
 ewD
 ewD
-gOl
+ewD
 ewD
 ewD
 koa
@@ -507584,15 +507731,15 @@ ewD
 ewD
 ewD
 ewD
-vgB
-ewD
-ewD
-ewD
-jmu
-ewD
-ewD
-ewD
-ewD
+eaU
+sDZ
+ogE
+eGm
+eGm
+spo
+eIw
+eaU
+eaU
 ewD
 ewD
 ewD
@@ -507801,7 +507948,7 @@ nYS
 aPm
 aPm
 aPm
-aPm
+ewD
 ewD
 ewD
 ewD
@@ -507830,7 +507977,7 @@ ewD
 ewD
 ewD
 ewD
-ewD
+gOl
 ewD
 fpd
 ewD
@@ -507841,14 +507988,14 @@ ewD
 gOl
 ewD
 ewD
-ewD
-ewD
-ewD
+eaU
+eaU
+eaU
 nTa
-ewD
-ewD
-ewD
-ewD
+nTa
+pme
+nTa
+eaU
 ewD
 ewD
 ewD
@@ -508059,7 +508206,7 @@ nYS
 tiZ
 aPm
 aPm
-aPm
+ewD
 ewD
 ewD
 ewD
@@ -508087,7 +508234,6 @@ ewD
 ewD
 ewD
 ewD
-gOl
 ewD
 ewD
 ewD
@@ -508100,13 +508246,14 @@ ewD
 ewD
 ewD
 ewD
-fpd
+koa
+eaU
+eaU
+aVy
+eaU
+eaU
+eaU
 ewD
-ewD
-ewD
-ewD
-ewD
-gOl
 ewD
 ewD
 ewD
@@ -508316,7 +508463,7 @@ dhc
 nYS
 tiZ
 aPm
-aPm
+ewD
 ewD
 ewD
 ewD
@@ -508356,13 +508503,13 @@ ewD
 ewD
 ewD
 ewD
-ewD
-ewD
-ewD
-ewD
-ewD
-ewD
-ewD
+koa
+koa
+koa
+koa
+koa
+koa
+koa
 ewD
 ewD
 ewD
@@ -508595,6 +508742,8 @@ ewD
 ewD
 gOl
 ewD
+ewD
+ewD
 isY
 ewD
 ewD
@@ -508610,15 +508759,13 @@ ewD
 ewD
 ewD
 ewD
-ewD
-ewD
 gOl
-hth
 ewD
-ewD
-ewD
-ewD
-ewD
+koa
+koa
+koa
+koa
+koa
 ewD
 ewD
 ewD
@@ -508830,7 +508977,7 @@ dhc
 dhc
 nYS
 nYS
-kfi
+aPm
 aPm
 ewD
 ewD
@@ -508855,27 +509002,27 @@ ewD
 ewD
 ewD
 ewD
-ewD
-ewD
-gOl
-ewD
-ewD
-ewD
-ewD
-ewD
-ewD
-ewD
-ewD
+koa
+koa
+koa
+koa
+koa
+koa
+koa
+koa
 ewD
 ewD
 ewD
 ewD
 ewD
-hth
 ewD
 ewD
 ewD
-ewD
+sAZ
+koa
+koa
+koa
+koa
 ewD
 ewD
 ewD
@@ -509111,27 +509258,27 @@ ewD
 ewD
 gOl
 ewD
+koa
+koa
+koa
+koa
+koa
+koa
+koa
+koa
+koa
+koa
 ewD
 ewD
 ewD
+xXu
 ewD
 ewD
+koa
+koa
+koa
 ewD
 ewD
-ewD
-ewD
-ewD
-ewD
-ewD
-ewD
-ewD
-gOl
-ewD
-ewD
-ewD
-ewD
-ewD
-gOl
 ewD
 ewD
 ewD
@@ -509368,25 +509515,25 @@ ewD
 ewD
 ewD
 ewD
+koa
+koa
+ewD
+xXu
+ewD
+ewD
+ewD
+koa
+koa
+koa
 ewD
 ewD
 ewD
 ewD
-ewD
-gOl
-ewD
-ewD
-ewD
-ewD
-ewD
-ewD
-ewD
-ewD
-ewD
-ewD
-ewD
-ewD
-ewD
+koa
+koa
+koa
+koa
+koa
 ewD
 ewD
 ewD
@@ -509622,26 +509769,26 @@ ewD
 ewD
 ewD
 ewD
-ewD
 gOl
 ewD
+koa
+koa
+koa
 ewD
 ewD
 ewD
 ewD
 ewD
 ewD
-ewD
-ewD
-ewD
-ewD
-ewD
-ewD
-gOl
-ewD
-ewD
-ewD
-ewD
+koa
+koa
+koa
+koa
+koa
+koa
+koa
+koa
+koa
 ewD
 ewD
 ewD
@@ -509881,6 +510028,8 @@ ewD
 ewD
 ewD
 ewD
+koa
+koa
 ewD
 ewD
 ewD
@@ -509888,18 +510037,16 @@ ewD
 ewD
 ewD
 ewD
+gOl
+koa
+koa
+koa
+koa
+koa
+koa
+koa
 ewD
-ewD
-ewD
-ewD
-ewD
-ewD
-ewD
-ewD
-ewD
-ewD
-ewD
-ewD
+xXu
 ewD
 ewD
 ewD
@@ -509911,7 +510058,7 @@ ewD
 gOl
 ewD
 ewD
-ewD
+hth
 ewD
 ewD
 ewD
@@ -510136,27 +510283,27 @@ jmu
 ewD
 ewD
 xXu
-ewD
-ewD
-ewD
-ewD
-ewD
-ewD
 gOl
 ewD
+koa
+koa
 ewD
 ewD
 ewD
 ewD
 ewD
-gOl
+ewD
+ewD
+ewD
+ewD
+koa
+koa
+koa
 ewD
 ewD
 ewD
 ewD
 ewD
-ewD
-gOl
 ewD
 ewD
 ewD
@@ -510395,6 +510542,8 @@ ewD
 ewD
 ewD
 ewD
+koa
+koa
 ewD
 ewD
 ewD
@@ -510409,9 +510558,7 @@ ewD
 ewD
 ewD
 ewD
-ewD
-ewD
-ewD
+gOl
 ewD
 ewD
 ewD
@@ -510629,7 +510776,7 @@ dhc
 dhc
 nYS
 aPm
-lAP
+gEX
 hVa
 kqp
 hVa
@@ -510660,15 +510807,15 @@ wrI
 ewD
 ewD
 ewD
-ewD
-ewD
-ewD
-ewD
-ewD
-ewD
-ewD
-ewD
 gOl
+ewD
+ewD
+ewD
+ewD
+ewD
+ewD
+ewD
+ewD
 ewD
 ewD
 ewD
@@ -510886,7 +511033,7 @@ dhc
 dhc
 nYS
 aPm
-lAP
+jiO
 oVt
 oVt
 oVt
@@ -510917,10 +511064,10 @@ ndV
 wrI
 ewD
 ewD
+ewD
+ewD
+ewD
 gOl
-ewD
-ewD
-ewD
 ewD
 ewD
 ewD
@@ -511184,7 +511331,7 @@ ewD
 ewD
 ewD
 ewD
-ewD
+gOl
 ewD
 ewD
 ewD
@@ -511665,7 +511812,7 @@ ewD
 ewD
 ewD
 ewD
-ewD
+isY
 ewD
 ewD
 ewD
@@ -511913,10 +512060,10 @@ nYS
 nYS
 nYS
 oIa
+oIa
+oIa
+oIa
 aPm
-eGm
-eGm
-aPm
 ewD
 ewD
 ewD
@@ -511931,7 +512078,7 @@ ewD
 ewD
 ewD
 ewD
-ewD
+isY
 ewD
 ewD
 ewD
@@ -512170,7 +512317,7 @@ jgj
 jgj
 jgj
 tiZ
-aPm
+oIa
 aPm
 aPm
 aPm
@@ -513462,20 +513609,20 @@ koa
 koa
 unG
 wPS
-sFJ
-sFJ
-vOS
-sFJ
-sFJ
-ant
-sFJ
-sFJ
-ant
-ant
-sFJ
-vOS
-sFJ
-sFJ
+ewD
+ewD
+xXu
+ewD
+ewD
+hGI
+ewD
+ewD
+hGI
+hGI
+ewD
+xXu
+ewD
+ewD
 ewD
 ewD
 nVn
@@ -513952,7 +514099,7 @@ mIV
 jgj
 kQA
 xhw
-xhw
+lnH
 jgj
 jgj
 ltY
@@ -514484,7 +514631,7 @@ ltY
 jgj
 tiZ
 aPm
-koa
+huM
 koa
 koa
 koa
@@ -514998,7 +515145,7 @@ jgj
 jgj
 tiZ
 aPm
-huM
+koa
 koa
 koa
 koa
@@ -515255,7 +515402,7 @@ tHT
 jgj
 tiZ
 aPm
-koa
+xFP
 koa
 koa
 koa
@@ -515512,7 +515659,7 @@ nxQ
 jgj
 tiZ
 aPm
-xFP
+aPm
 koa
 koa
 xkF
@@ -515768,10 +515915,10 @@ ltY
 jgj
 jgj
 tiZ
-kfi
-kfi
-kfi
-kfi
+nYS
+aPm
+aPm
+aPm
 aPm
 hta
 ewD
@@ -516025,7 +516172,7 @@ nxQ
 dpH
 jgj
 tiZ
-nYS
+dhc
 nYS
 nYS
 nYS
@@ -518601,10 +518748,10 @@ dhc
 nYS
 aPm
 ewD
-spo
-spo
-spo
-spo
+cal
+cal
+cal
+cal
 cal
 qwn
 hSC
@@ -518862,17 +519009,17 @@ ewD
 ewD
 ewD
 ewD
-spo
-spo
-spo
-spo
-spo
-spo
-spo
-spo
-spo
-spo
-spo
+cal
+cal
+cal
+cal
+cal
+cal
+cal
+cal
+cal
+cal
+cal
 ewD
 ewD
 nVn
@@ -519113,9 +519260,9 @@ dhc
 dhc
 dhc
 nYS
-kfi
-kfi
-kfi
+aPm
+aPm
+aPm
 aPm
 ewD
 ewD
@@ -519373,7 +519520,7 @@ nYS
 nYS
 nYS
 nYS
-kfi
+aPm
 aPm
 uGK
 uGK
@@ -519888,7 +520035,7 @@ dhc
 dhc
 dhc
 nYS
-kfi
+aPm
 aPm
 koa
 koa
@@ -520146,7 +520293,7 @@ dhc
 dhc
 tiZ
 tiZ
-kfi
+aPm
 aPm
 koa
 koa
@@ -520404,7 +520551,7 @@ dhc
 dhc
 tiZ
 tiZ
-kfi
+aPm
 aPm
 koa
 koa
@@ -520662,19 +520809,19 @@ dhc
 dhc
 tiZ
 nYS
-kfi
-kfi
-kfi
-kfi
-kfi
-kfi
-kfi
-kfi
-kfi
-kfi
-kfi
-kfi
-kfi
+aPm
+aPm
+aPm
+aPm
+aPm
+aPm
+aPm
+aPm
+aPm
+aPm
+aPm
+aPm
+aPm
 aPm
 koa
 wPS
@@ -520918,19 +521065,19 @@ dhc
 dhc
 dhc
 dhc
-dhc
-dhc
-dhc
-dhc
-dhc
-dhc
-dhc
-dhc
-dhc
-dhc
-dhc
-dhc
-dhc
+nYS
+nYS
+nYS
+nYS
+nYS
+nYS
+nYS
+nYS
+nYS
+nYS
+nYS
+nYS
+nYS
 nYS
 aPm
 koa
