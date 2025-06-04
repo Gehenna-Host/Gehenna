@@ -4,7 +4,7 @@
 	faction = "Vampire"
 	total_positions = 8
 	spawn_positions = 8
-	supervisors = " the Triads"
+	supervisors = " your superiors back east and yourself. Special circumstances may change this"
 	selection_color = "#bb9d3d"
 
 	outfit = /datum/outfit/job/triad_boss
@@ -19,7 +19,7 @@
 	allowed_species = list("Kuei-Jin")
 	minimal_generation = 13
 
-	duty = "Make money, do drugs, fight law. Your hideout is the laundromat in Chinatown."
+	duty = "Graciously, your bosses have granted you a station managing the local Triad and its assets. Your job is to keep profits up, maintain a sphere of influence, and to oversee illicit activity. Your territory is Chinatown and the hideout beneath the laundromat."
 	experience_addition = 10
 	minimal_masquerade = 0
 
@@ -48,7 +48,7 @@
 	faction = "Vampire"
 	total_positions = 8
 	spawn_positions = 8
-	supervisors = " the Triads"
+	supervisors = " the Triad Boss. Special circumstances may change this."
 	selection_color = "#bb9d3d"
 
 	outfit = /datum/outfit/job/triad_soldier
@@ -63,7 +63,7 @@
 	allowed_species = list("Human", "Werewolf", "Kuei-Jin")
 	minimal_generation = 13
 
-	duty = "Make money, do drugs, fight law. Your hideout is the laundromat in Chinatown."
+	duty = "A sworn and full-blooded member; the backbone of the Triad. Your job is to keep profits up, maintain a sphere of influence, and to oversee illicit activity. Your territory is Chinatown and the hideout beneath the laundromat."
 	experience_addition = 10
 	minimal_masquerade = 0
 

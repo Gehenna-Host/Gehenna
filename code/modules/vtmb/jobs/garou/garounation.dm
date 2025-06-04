@@ -94,7 +94,7 @@
 
 	known_contacts = null
 
-	v_duty = "You are the keeper of your Sept's grounds. Your duty is to look after those with access to the caerns and bawns to ensure things remain pleasing to the spirits, and to ensure rites and rituals go well. Keep an eye on the land, and entrust your sept with keeping others in line."
+	v_duty = "If you are a keeper, your duty is to look after those with access to the caerns and bawns to ensure things remain pleasing to the spirits, and to ensure rites and rituals go well. Keep an eye on the land, and entrust your sept with keeping others in line. If you are a truthcatcher, your duty is to mediate in internal disputes, and work with the sept's Council to see deeds exonerated and punished. Keep an ear out to the people, and keep your heart a judge's balance"
 
 /datum/outfit/job/garou/gladekeeper
 	name = "Burnt Tree Keeper"
@@ -270,7 +270,7 @@
 
 	known_contacts = null
 
-	v_duty = "You are the keeper of your Sept's grounds. Your duty is to look after those with access to the caerns and bawns to ensure things remain pleasing to the spirits, and to ensure rites and rituals go well. Keep an eye on the land, and entrust your sept with keeping others in line."
+	v_duty = "If you are a keeper, your duty is to look after those with access to the caerns and bawns to ensure things remain pleasing to the spirits, and to ensure rites and rituals go well. Keep an eye on the land, and entrust your sept with keeping others in line. If you are a truthcatcher, your duty is to mediate in internal disputes, and work with the sept's Council to see deeds exonerated and punished. Keep an ear out to the people, and keep your heart a judge's balance"
 
 /datum/outfit/job/garou/citykeeper
 	name = "City Sept Keeper"
