@@ -82,6 +82,10 @@
 	path = /obj/item/clothing/under/vampire/prince/female
 	allowed_roles = list("Prince")
 
+/datum/gear/uniform/suit/redvest
+	display_name = "vest, red"
+	path = /obj/item/clothing/under/vampire/redvest
+
 // Skirt
 /datum/gear/uniform/skirt
 	subtype_path = /datum/gear/uniform/skirt
@@ -113,6 +117,10 @@
 	description = "A white turtleneck" // Consistency!
 	path = /obj/item/clothing/under/vampire/turtleneck_white
 
+/datum/gear/uniform/turtleneck/tacturtleneck
+	display_name = "turtleneck, tactical"
+	path = /obj/item/clothing/under/vampire/tacturtleneck
+
 // Pants
 /datum/gear/uniform/pants
 	subtype_path = /datum/gear/uniform/pants
@@ -125,6 +133,14 @@
 /datum/gear/uniform/pants/grimey
 	display_name = "pants, grimey"
 	path = /obj/item/clothing/under/vampire/malkavian
+
+/datum/gear/uniform/pants/blackshorts
+	display_name = "black shorts"
+	path = /obj/item/clothing/under/vampire/blackshorts
+
+/datum/gear/uniform/pants/blackpants
+	display_name = "black pants"
+	path = /obj/item/clothing/under/vampire/blackpants
 
 // Misc
 /datum/gear/uniform/dress

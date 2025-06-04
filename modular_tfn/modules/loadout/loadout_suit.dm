@@ -60,18 +60,18 @@
 	description = "	True clothing for any punk."
 	path = /obj/item/clothing/suit/vampire/jacket
 
-/datum/gear/suit/jacket/dutch
-	display_name = "jacket, dutch"
-	path = /obj/item/clothing/suit/dutch
-
 /datum/gear/suit/jacket/military
 	display_name = "jacket, military"
 	description = "A canvas jacket styled after classical American military garb."
 	path = /obj/item/clothing/suit/jacket/miljacket
 
-/datum/gear/suit/jacket/black_suit
-	display_name = "jacket, black suit"
-	path = /obj/item/clothing/suit/toggle/lawyer/black
+/datum/gear/suit/jacket/blackjacket
+	display_name = "furred jacket"
+	path = /obj/item/clothing/suit/vampire/blackjacket
+
+/datum/gear/suit/jacket/silverjacket
+	display_name = "silver striped jacket"
+	path = /obj/item/clothing/suit/vampire/silverjacket
 
 // Trenchcoats
 /datum/gear/suit/trenchcoat
@@ -112,11 +112,3 @@
 /datum/gear/suit/hawaiian
 	display_name = "hawaiian overshirt"
 	path = /obj/item/clothing/suit/hawaiian
-
-/datum/gear/suit/striped_sweater
-	display_name = "striped sweater"
-	path = /obj/item/clothing/suit/striped_sweater
-
-/datum/gear/suit/letterman_red
-	display_name = "letterman, red"
-	path = /obj/item/clothing/suit/jacket/letterman_syndie
