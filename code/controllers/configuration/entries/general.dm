@@ -247,13 +247,13 @@
 	config_entry_value = "https://wiki.wod13.org"
 
 /datum/config_entry/string/forumurl
-	config_entry_value = "https://discord.gg/6YNKYFAWfd"
+	config_entry_value = "https://gehenna-13.neocities.org/"
 
 /datum/config_entry/string/discordurl
-	config_entry_value = "https://discord.gg/6YNKYFAWfd"
+	config_entry_value = "https://discord.gg/ynnRm32Fnq"
 
 /datum/config_entry/string/rulesurl
-	config_entry_value = "https://discord.gg/6YNKYFAWfd"
+	config_entry_value = "https://gehenna-13.neocities.org/rules"
 
 /datum/config_entry/string/githuburl
 	config_entry_value = "https://github.com/Gehenna-Host/Gehenna"
