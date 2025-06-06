@@ -238,10 +238,6 @@
 	var/distance = get_dist(loc, target)
 	var/turf/adjusted_target = target
 
-	if(!do_after(src, 0.5 SECONDS))
-		to_chat(src, span_warning("Your jump was interrupted!"))
-		return
-
 	if(distance > adjusted_jump_range)
 		var/dx = target.x - loc.x
 		var/dy = target.y - loc.y
