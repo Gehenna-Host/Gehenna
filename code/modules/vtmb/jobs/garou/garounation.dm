@@ -152,7 +152,7 @@
 
 	known_contacts = null
 
-	v_duty = "You have put yourself forward as a force for the Sept. Working under the Warder, your duty is to defend and protect the sacred grounds of Gaia, and assist in bringing to heel those who have breached the veil for the Truthcatcher."
+	v_duty = "You have put yourself forward as a force for the Sept. Led by the Warders, a Guardian's duty is to defend and protect the sacred grounds of Gaia, and assist in bringing to heel those who have breached the veil for the Truthcatcher."
 
 /datum/outfit/job/garou/gladeguardian
 	name = "Burnt Tree Guardian"
@@ -328,7 +328,7 @@
 
 	known_contacts = null
 
-	v_duty = "You have put yourself forward as a force for the Sept. Working under the Warder, your duty is to defend and protect the sacred grounds of Gaia, and assist in bringing to heel those who have breached the veil for the Truthcatcher."
+	v_duty = "You have put yourself forward as a force for the Sept. Led by the Warders, a Guardian's duty is to defend and protect the sacred grounds of Gaia, and assist in bringing to heel those who have breached the veil for the Truthcatcher."
 
 /datum/outfit/job/garou/cityguardian
 	name = "City Sept Guardian"
